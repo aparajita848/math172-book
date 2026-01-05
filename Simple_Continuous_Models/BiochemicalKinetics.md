@@ -1,0 +1,265 @@
+# Modeling Biochemical Kinetics
+
+In this section we will learn to recognize and formulate the governing equations of biochemical kinetics and learn some simple principles to analyze such equations.
+
+## Two Molecular States
+
+Let's consider a simple case where a **biological complex switches between two states**. One prototypical example is ion channels, which are pores in the membrane of a cell that are responsible for the electric conductance of membranes. The channel molecules typically shift between open and closed configurations.
+
+![Molecular switch](images/ionC.png)
+
+The conventional description of a molecule shifting between two states, $A$ and $B$ (for example, open and closed), is the ***kinetic scheme***,
+
+$$
+A \xrightleftharpoons[k_{-1}]{k_{1}} B.
+$$
+
+In this case $A$ and $B$ denote the **concentration** (number per unit volume) of the two molecular configurations, as well as their **states**.
+
+To develop a mathematical equation we first need to make some assumptions:
+
+- Transitions between states are random
+- The probability that a transition occurs during some time interval does not depend on the history of events preceding the time in question
+- If environmental conditions are fixed then the overall characteristics of the transitions that occur in some time interval do not depend on the time at which the observations are made
+
+We can now derive an equation describing the change in concentration of $A$ and $B$ species over time. If we consider species $A$ then at a given time step $\Delta t$ the only possibility is that (i) the molecule remains in state $A$ or (ii) the molecule shifts to state $B$. We define $k_1 \Delta t$ to be the probability that (ii) occurs. We need to use $\Delta t$ here because $k_1$ is a rate, so that it has units of 1/time. Then, in average,
+
+$$
+\begin{aligned}
+\text{decrease in } A \text{ molecules} &= \text{total number of } A \text{ molecules} \times \text{fraction that become } B\\
+&= A \cdot (k_1 \Delta t)\\
+\\
+\text{increase in } A \text{ molecules} &= \text{total number of } B \text{ molecules} \times \text{fraction of } B \text{ molecules that become } A\\
+&= B \cdot (k_{-1} \Delta t).
+\end{aligned}
+$$
+
+The expected change in the number of $A$ molecules during the time interval $t + \Delta t$ is
+
+$$
+\begin{aligned}
+A(t +\Delta t) - A(t) &= -A(t) \cdot (k_1 \Delta t) + B(t) \cdot (k_{-1} \Delta t)\\
+\\
+\frac{A(t +\Delta t) - A(t)}{\Delta t} &= -k_{1} \, A(t) + k_{-1} \, B(t)
+\end{aligned}
+$$
+
+We can take the limit $\Delta t \to 0$ and use the definition of the derivative
+
+$$
+\frac{dA}{dt} = \lim_{\Delta t\to 0} \frac{A(t +\Delta t) - A(t)}{\Delta t},
+$$
+
+which leads us to our differential equation
+
+$$
+\frac{dA}{dt} = -k_{1} \, A + k_{-1} \, B.
+$$
+
+Similarly we can obtain for $B$
+
+$$
+\frac{dB}{dt} = k_{1} \, A - k_{-1} \, B.
+$$
+
+The solution to these equations is
+
+$$
+\begin{aligned}
+A(t) &= A_{\infty} - (A_{\infty} -A_0) e^{-(k_1+ k_{-1}) t}\\
+B(t) &= M-A(t),
+\end{aligned}
+$$
+
+where
+
+$$
+A_{\infty} = \frac{k_{-1} M}{k_1 + k_{-1}},
+$$
+
+$A_0$ is the initial concentration of $A$ and $M = A+B$[^conservation] is the total concentration of molecules, considered to be constant for all times.
+
+[^conservation]: This comes from the **conservation law**, and implies that in the given kinetic scheme molecules merely shift between two conformations, so that their total number is conserved (does not change).
+
+Let's look at some special cases:
+
+- When $t=0$,
+
+$$
+\begin{aligned}
+A &= A_{\infty} - (A_{\infty} -A_0) e^{-(k_1 + k_{-1}) \cdot 0}\\
+&= A_{\infty} - (A_{\infty} -A_0) e^{0}\\
+&= A_{\infty} - (A_{\infty} -A_0) \cdot 1\\
+&= A_{\infty} - (A_{\infty} -A_0) = A_{\infty} - A_{\infty} + A_0\\
+&= A_0.
+\end{aligned}
+$$
+
+This is why we called $A_0$ the initial concentration.
+
+- $A_{\infty}$ gives the long-time behavior of $A$. To see this, assume $t \to \infty$
+
+$$
+\begin{aligned}
+\lim_{t\to \infty} e^{-t} &= 0,\\
+\lim_{t\to \infty} e^{-2 t} &= \left(\lim_{t\to \infty} e^{-t} \right)^2 = (0)^2 = 0,
+\end{aligned}
+$$
+
+so that
+
+$$
+\begin{aligned}
+\lim_{t\to \infty} A &= \lim_{t\to \infty} \left[A_{\infty} - (A_{\infty} -A_0) e^{-(k_1 + k_{-1}) t} \right]\\
+&= A_{\infty} - (A_{\infty} -A_0)\lim_{t\to \infty} e^{-(k_1+ k_{-1})}\\
+\\
+&= A_{\infty} - (A_{\infty} -A_0) \cdot 0 = A_{\infty}.
+\end{aligned}
+$$
+
+- **Steady-states** of $A$ and $B$ occur when concentrations are constant. At steady state:
+
+$$
+\begin{cases}
+\dfrac{dA}{dt} = -k_1A+k_{-1}B=0\\ 
+\dfrac{dB}{dt} = k_1A-k_{-1}B=0
+\end{cases}
+\implies k_1A=k_{-1}B
+$$
+
+The rate of conversion of $A$ to $B$ should exactly balance the rate of conversion of $B$ to $A$.
+
+For all the examples below, let's assume $M=100$.
+
+### Example 1
+
+If $k_1 = 0.1$, $k_{-1} = 0.5$, and
+
+**(a)** $A_0 = 90$
+
+**(b)** $A_0 = 5$
+
+**Questions:**
+
+- In which case will you have more $A$ after a long time (long-time behavior)?
+
+  *Note that in the formula for $A_{\infty}$, the long term behaviour of $A$ depends on the rates of conversion and the total concentration $M$. Since they are the same for both cases, both will have the same concentration of $A$ in the long-term.*
+
+- What is the limiting value of $A$?
+
+  $$
+  A_{\infty} = \frac{k_{-1}M}{k_1+k_{-1}} = \frac{0.5 \cdot (100)}{0.1+0.5} = \frac{50}{0.6} = 83.33
+  $$
+
+- Is $A$ growing or decaying in (a)? in (b)?
+
+  *Comparing the initial values to $A_{\infty}$, we see that $A$ is decaying in (a) while it is growing in (b).*
+
+### Example 2
+
+For $k_1 = 0.25$ and $A_0 = 10$, the two figures below show the concentration of $A$ and $B$ as functions of time. One of the figures corresponds to $k_{-1}<k_1$ and the other to $k_{-1}>k_1$.
+
+**(a)** Which one is $k_{-1}<k_1$? Which is $k_{-1}>k_1$?
+
+**(b)** Knowing that $A_{\infty} = 200/3$, can you determine the value of $k_{-1}$?
+
+![Figure 1](images/fig1.png)
+![Figure 2](images/fig2.png)
+
+---
+
+## The Law of Mass Action
+
+In the last section we considered kinetic reactions where we only have one reactant and one product. In this section we will consider reactions where two molecules have to collide in order to form some product. To formulate the relevant equations we make use of the **Law of Mass Action:**
+
+***In a reaction involving the interaction of two types of molecules, the rate of reaction is proportional to the concentrations of the two reactants.***
+
+For example,
+
+![Reaction diagram](images/react1.png)
+
+In this reaction
+
+$$
+A + A \xrightleftharpoons[k_{-1}]{k_{1}} C,
+$$
+
+the rate of the forward reaction would be $k_1 [A] \cdot [A]$, where the square braces denote concentrations. So that if we want to write the *differential equations* describing the change in reactants and products we have
+
+$$
+\begin{aligned}
+\frac{dA}{dt} &= -\text{forward} + \text{backward}\\
+&= -n k_1 A^2 + m k_{-1} C,
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\frac{dC}{dt} &= \text{forward} - \text{backward}\\
+&= i k_1 A^2 - j k_{-1} C.
+\end{aligned}
+$$
+
+Here $n$, $m$, $i$ and $j$ are constants found through mass balance.
+
+In our case we know that you lose two $A$ molecules in order to form one $C$ molecule so that $n=2$. Similarly, every time a $C$ molecule breaks it gives two $A$ molecules, so $m=2$. Since only one $C$ is formed at each forward reaction and only one $C$ is gained at each backward reaction, $i=j=1$. Then our differential equations become:
+
+$$
+\begin{aligned}
+\frac{dA}{dt} &= -2 k_1 A^2 + 2 k_{-1} C,\\
+\\
+\frac{dC}{dt} &= k_1 A^2 - k_{-1} C.
+\end{aligned}
+$$
+
+Another way of looking at this is noting that $A + 2C$ is always the same, independent of time. This means that the total amount of single molecules at a given time is conserved.
+
+Let's look at other reactions and their differential equations.
+
+### Two-molecule Dimerization
+
+Two types of molecules, $A$ and $B$, combine to form a complex $C$
+
+![Two-molecule dimerization](images/react2.png)
+
+$$
+A + B \xrightleftharpoons[k_{-1}]{k_{1}} C
+$$
+
+Which gives the differential equations
+
+$$
+\begin{aligned}
+\frac{dA}{dt} &= -k_1 A\,B + k_{-1} C,\\
+\\
+\frac{dB}{dt} &= -k_1 A\,B + k_{-1} C,\\
+\\
+\frac{dC}{dt} &= k_1 A\,B - k_{-1} C.
+\end{aligned}
+$$
+
+### Enzyme Kinetics
+
+An enzyme molecule, $E$, binds to a substrate molecule, $S$, to form a complex $C$; this reaction is reversible. The complex then breaks into a product, $P$, and the original enzyme, which can then catalyze a new reaction. (The second step is assumed to be very fast, since the enzyme catalyzes the reaction.)
+
+![Enzyme kinetics](images/react3.png)
+
+$$
+E + S \xrightleftharpoons[k_{-1}]{k_{1}} C \xrightarrow{k_{2}} E+P
+$$
+
+$$
+\begin{aligned}
+\frac{dE}{dt} &= -k_1 E\,S + k_{-1} C + k_2 C,\\
+\\
+\frac{dS}{dt} &= -k_1 E\,S + k_{-1} C,
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\frac{dC}{dt} &= k_1 E\,S - k_{-1} C - k_2 C,\\
+\\
+\frac{dP}{dt} &= k_{2} C.
+\end{aligned}
+$$
