@@ -7,8 +7,8 @@ project:
   keywords: 
     - math-models
     - biological context
-  authors: 
-    - name: Aparajita Budithi
+  #authors: 
+  #  - name: Aparajita Budithi
   # github: /math172-book
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
