@@ -13,7 +13,7 @@ This is an open-source text for students taking MATH 172: Mathematical Modeling 
 %Mathematical modeling is being applied in every major discipline in the biomedical sciences. Mathematics has always benefited from its involvement with developing sciences. Each successive interaction revitalizes and enhances the field. Biomedical science is clearly the premier science of the foreseeable future. Mathematical biology is a fast-growing, well-recognized, albeit not clearly defined, subject and is, to my mind, the most exciting modern application of mathematics.
 
 % What this book entails & how to go about it.
-This book encompasses only a few selected topics from the vast scope of mathematical biology; links to further readings and resources have been provided.
+This book encompasses only a few selected topics from the vast scope of mathematical biology; links to further readings and resources will be provided.
 % ## For Instructors
 % ### Order of Chapters
 % Although the chapters of this textbook have been sequenced into the following order of sections: Simple Continuous Models--> Discrete Models--> Multiple-Species--> Continuous Models--> Genetic Inheritance; there are definitely several different sequences in which the chapters can be taught. The most logical alternative is to teach Single-Species--> Multiple-Species and tackling Continuous & Discrete Models separately - and has been taught in that manner previously. 
@@ -24,9 +24,9 @@ This book encompasses only a few selected topics from the vast scope of mathemat
 :::{note}
 The content of this book has been taken from various sources including textbooks, websites and notes from past instructors, which have been referenced whenever possible. This book has been created solely as an instructional resource material for the students of this course. 
 % and therefore we DO NOT claim any copyright to the content.
-Please note that it is still a work-in-progress and will be updated routinely.
+_Please note that it is still a work-in-progress and will be updated routinely._
 :::
 
 %+++ {"part": "acknowledgements"}
-%This course was originally created by Dr. Matt Miller; we are further grateful to all the past instructors of Math 172 - Joe Foster, Jonathan Smith; who have contributed their time and effort to this course; their notes serve as the basis for this textbook.
+%This course was originally created by Dr. Matt Miller; we are further grateful to all the past instructors of Math 172 - Dr. Paula Vasquez, Joe Foster, Jonathan Smith; who have contributed their time and effort to this course; their notes serve as the basis for this textbook.
 %+++
