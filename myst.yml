@@ -43,6 +43,8 @@ project:
         - file: Genetic_Inheritance/Probability.md
         - file: Genetic_Inheritance/Mendel_Punnett_Squares.md
         - file: Genetic_Inheritance/DNA_Sequences.md 
+    - file: Bibliography.md
+
   exports:
     - format: pdf
       template: plain_latex_book
