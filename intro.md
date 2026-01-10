@@ -5,7 +5,8 @@ title: Forward
 This is an open-source text for students taking MATH 172: Mathematical Modeling for the Life Sciences at UofSC.
 
 :::{note}
-The content of this book has been taken from various sources including textbooks, websites and notes from past instructors, which have been referenced wherever possible, and is created solely for the reference of the students for this course. % and therefore we DO NOT claim any copyright.
+The content of this book has been taken from various sources including textbooks, websites and notes from past instructors, which have been referenced wherever possible, and is created solely for the reference of the students for this course. 
+% and therefore we DO NOT claim any copyright.
 Please note that it is still a work-in-progress and will be updated routinely.
 :::
 

@@ -2,11 +2,11 @@ version: 1
 project:
   id: b1a3fa45-81e9-438f-ae08-234f44d2b383
   title: Math 172 Textbook (UofSC)
+#  logo: images/puddle-escher.jpg
   description: online text for math 172 - math modeling for the life-sciences created using Jupyter book
   keywords: 
     - math-models
     - biological context
-  logo: images/puddle-escher.jpg
 
   #authors: 
   #  - name: Aparajita Budithi
@@ -55,4 +55,4 @@ site:
 
   options:
   #   favicon: favicon.ico
-  #   logo: site_logo.png
+    logo: images/puddle-escher.jpg
