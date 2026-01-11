@@ -5,39 +5,51 @@
 :open: true
 Evaluate the following derivatives:
 
-$$
-\begin{align*}
-\frac{d}{dx}[e^x] &= \\
-\frac{d}{dx}[e^{kx}] &=
-\end{align*}
-$$
 :::{math}
 :enumerated: false
-\begin{align*}
+\begin{align}
 \frac{d}{dx}[e^x] &= \\
 \frac{d}{dx}[e^{kx}] &=
-\end{align*}
+\end{align}
 :::
 
-Suppose that $y_1=e^x$ and $y_2=e^{kx}$, rewrite the derivatives in terms of $y1$ and $y_2$.
+Suppose that $y_1=e^x$ and $y_2=e^{kx}$, rewrite the derivatives in terms of $y_1$ and $y_2$.
 :::
+
 :::{tip} Solution
 :icon: false
 :class: dropdown
-$$
-\frac{d}{dx}[e^x] &= e^x
-$$
+:::{math}
+:enumerated: false
+\begin{align}
+\frac{d}{dx}[e^x] &= e^x \\
+\frac{d}{dx}[e^{kx}] &= ke^{kx}
+\end{align}
+:::
+
 Observe that the derivative of the function $e^x$ is itself, therefore, if $y_1=e^x$ then
 
-$$
-\frac{de^x}{dx}=e^x \implies \frac{dy_1}{dx}=y_1
-$$ 
+:::{math}
+:enumerated: false
+\frac{de^x}{dx}=e^x 
+:::
+:::{math}
+:label: diff_eq_exp1
+\implies \frac{dy_1}{dx}=y_1
+:::
 And similarly, if we let $y_2=e^{kx}$,
-$$
-\frac{de^{kx}}{dx}=ke^{kx} \implies \frac{dy_2}{dx}=ky_2
-$$
+:::{math}
+:enumerated: false
+\frac{de^{kx}}{dx}=ke^{kx} 
+:::
+:::{math}
+:label: diff_eq_exp2
+\implies \frac{dy_2}{dx}=ky_2
+:::
 
-The equations on the right in (3) and (4) (linking a function to its own derivative) is a new kind of equation called a **differential equation** (abbreviated DE). We say that $y=e^x$ is a function that "satisfies" the equation, and we call this a **solution to the differential equation**.
+The equations on the right in [](#diff_eq_exp1) and [](#diff_eq_exp2) (linking a function to its own derivative) are a new kind of equations called a **differential equation** (abbreviated DE). We say that $y_1=e^x$ is a function that "satisfies" equation [](#diff_eq_exp1), and we call this a **solution to the differential equation**. 
+
+And similarly, $y_2=e^{kx}$ is a solution to the differential equation [](#diff_eq_exp2).
 :::
 ---
 
