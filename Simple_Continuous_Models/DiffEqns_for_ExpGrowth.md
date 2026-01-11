@@ -1,79 +1,97 @@
-# Differential Equations for Exponential Growth & Decay
+# Differential Equations for Exponential Growth & Decay[^Source:{cite} (edited for the purpose of this course.)]
 
-*Source: Edelstein-Keshet, Leah. Differential Calculus for the Life Sciences. University of British Columbia, 2020. (edited for the purpose of this course.)*
-
-## Warm-up
-
+:::{tip} Warm-up
+:class: dropdown
+:open: true
 Evaluate the following derivatives:
 
 $$
-\begin{aligned}
+\begin{align*}
 \frac{d}{dx}[e^x] &= \\
 \frac{d}{dx}[e^{kx}] &=
-\end{aligned}
+\end{align*}
 $$
 
+Suppose that $y=e^x$ rewrite the derivatives in terms of $y$.
+:::
+:::{tip} Solution
+:class: dropdown
+$$
+\begin{align*}
+\frac{d}{dx}[e^x] &= e^x\\
+\frac{d}{dx}[e^{kx}] &= ke^x
+\end{align*}
+$$
 Observe that the derivative of the function $e^x$ is itself, therefore, if $y=e^x$ then
 
 $$
 \frac{de^x}{dx}=e^x \implies \frac{dy}{dx}=y
+$$ 
+And similarly, if we let $y=e^{kx}$,
+$$
+\frac{de^{kx}}{dx}=ke^{kx} \implies \frac{dy}{dx}=ky
 $$
 
 The equation on the right (linking a function to its own derivative) is a new kind of equation called a **differential equation** (abbreviated DE). We say that $y=e^x$ is a function that "satisfies" the equation, and we call this a **solution to the differential equation**.
+:::
 
-### Definition: Differential Equation
+**Definition**: A **differential equation** is a mathematical equation that relates one or more derivatives of some function to the function itself. Solving the differential equation is the process of identifying the function(s) that satisfies the given relationship.
 
-A **differential equation** is a mathematical equation that relates one or more derivatives of some function to the function itself. Solving the differential equation is the process of identifying the function(s) that satisfies the given relationship.
+:::{note}
+The solution to an algebraic equation is a number, whereas the solution to a differential equation is a function.
+:::
 
-*Note:* The solution to an algebraic equation is a number, whereas the solution to a differential equation is a function.
-
----
-
-*Since we are interested in observing changing populations over time, we will henceforth use the independent variable $t$ for time and the dependent variable as $N$ for the population size.*
+_Since we are interested in observing changing populations over time, we will henceforth use the independent variable $t$ for time and the dependent variable as $N$ for the population size._
 
 $$
 N(t) = \text{population size as a function of time } t.
 $$
 
-## Observations
+### _Observations_
 
-**1.** Consider the function $N(t)=e^t$. Show that this function satisfies the differential equation
+- Consider the function $N(t)=e^t$. Show that this function satisfies the differential equation
 
 $$
 \frac{dN}{dt}=N
 $$
 
-*Solution.* Differentiating the function $N(t)=e^t$ gives
+:::{tip} Solution
+:class: dropdown
+Differentiating the function $N(t)=e^t$ gives
 
 $$
-\begin{aligned}
+\begin{align*}
 \frac{dN}{dt} &= \frac{d}{dt}[e^t]=e^t\\
 \frac{dN}{dt} &= N
-\end{aligned}
+\end{align*}
 $$
+:::
 
-**2.** The function $N(t)=e^{rt}$ (for $r$ constant) satisfies the differential equation
+- The function $N(t)=e^{rt}$ (for $r$ constant) satisfies the differential equation
 
 $$
 \frac{dN}{dt}=rN \tag{1}
 $$
 
-*Solution.* We can verify by differentiating $N(t)=e^{rt}$, using the chain rule. Setting $u=rt$, and $N(t) = e^u$, we have
+:::{tip} Solution
+:class: dropdown
+We can verify by differentiating $N(t)=e^{rt}$, using the chain rule. Setting $u=rt$, and $N(t) = e^u$, we have
 
 $$
-\begin{aligned}
+\begin{align*}
 \frac{dN}{dt} &= \frac{dN}{du}\cdot \frac{du}{dt}=e^u\cdot r = re^u = rN\\
 \implies \frac{dN}{dt} &= rN
-\end{aligned}
+\end{align*}
 $$
 
-*It is interesting to ask: Is this the only function that satisfies the differential equation (1)? Are there other possible solutions? What about a function such as $N(t) = 2e^{rt}$ or $N(t) = 400e^{rt}$?*
+_It is interesting to ask: Is this the only function that satisfies the differential equation (1)? Are there other possible solutions? What about a function such as $N(t) = 2e^{rt}$ or $N(t) = 400e^{rt}$?_
 
-*Note:* For any constant $C$, the function $N(t) = Ce^{rt}$ is a solution to the DE (1). *(verify by differentiating)*
+:::{note}
+For any constant $C$, the function $N(t) = Ce^{rt}$ is a solution to the DE (1). _(verify by differentiating)_
+:::
 
----
-
-### General Solution
+:::{important} **General Solution**
+:icon: false
 
 Solutions to the differential equation
 
@@ -93,6 +111,7 @@ for $C$ an arbitrary constant.
 - If $r < 0$, then we have **exponential decay**.
 
 Since $e^{rt}$ is always positive, the constant $C$ determines the sign of the function as a whole - whether its graph lies above or below the $t$ axis.
+:::
 
 ![Exponential growth and decay curves](figures/exponential-curves.png)
 
@@ -158,7 +177,8 @@ $$
 
 ## Exercises
 
-### Exercise 1
+```{exercise}
+:label: ex1_DiffEqns
 
 Find the solution to the differential equation
 
@@ -167,26 +187,32 @@ $$
 $$
 
 that satisfies the initial condition $N(0)=3$. Describe the behaviour of the solution you have found *(sketch a graph)*.
-
-*Solution.* The differential equation (DE) indicates that $r=-0.5$, so solutions are exponential functions of the form $N(t)=N_0e^{rt}$ and $N_0=3$, so the solution is
+```
+```{solution} ex1_DiffEqns
+:label: ex1_DiffEqns_sol
+The differential equation (DE) indicates that $r=-0.5$, so solutions are exponential functions of the form $N(t)=N_0e^{rt}$ and $N_0=3$, so the solution is
 
 $$
 N(t)=3e^{-0.5t}
 $$
 
 *This is a decaying exponential function.*
+```
 
----
 
-### Exercise 2
+```{exercise}
+:label: ex2_DiffEqns
 
 Find the solution to the following differential equation:
 
 $$
 \frac{dN}{dt}=rN, \quad N_0=400, \quad N_2=412.
 $$
+```
 
-*Solution.* If we do what we have done before in previous problems, then we obtain the solution
+```{solution} ex2_DiffEqns
+:label: ex2_DiffEqns_sol
+ If we do what we have done before in previous problems, then we obtain the solution
 
 $$
 N_t=400e^{rt}.
@@ -208,3 +234,4 @@ Thus the final solution is
 $$
 N=400e^{0.0148t}.
 $$
+```

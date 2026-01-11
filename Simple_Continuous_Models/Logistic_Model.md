@@ -1,4 +1,4 @@
-# Logistic (Limited) Growth
+# Logistic (Limited) Growth Model
 
 ---
 
@@ -293,36 +293,5 @@ This gives us three equilibrium points:
 - $N = A = 1000$ (unstable, Allee threshold)
 - $N = K = 10000$ (stable, carrying capacity)
 
----
 
-## Notation Summary
 
-| Symbol | Meaning |
-|--------|---------|
-| $A$ | Allee threshold |
-| $b$ | Instantaneous birth rate |
-| $d$ | Instantaneous death rate |
-| $\Delta N$ | Change in population size between time $t$ and $t+1$ |
-| $\frac{dN}{dt}$ | Population growth rate |
-| $e$ | Euler's number |
-| $K$ | Carrying capacity |
-| $N$ | Population size |
-| $N_0$ | Initial population |
-| $N_t$ | Population size at time $t$ |
-| $r$ | Instantaneous rate of increase |
-| $t$ | Time |
-| $t_D$ | Doubling time |
-| $t_H$ | Half-life |
-
----
-
-## Key Takeaways
-
-1. **Logistic growth** models populations with limited resources: $\frac{dN}{dt} = rN(1 - N/K)$
-2. **Carrying capacity** $K$ is the maximum sustainable population
-3. The term $(1 - N/K)$ represents the unused portion of carrying capacity
-4. **Two equilibrium points**: $N = 0$ (unstable) and $N = K$ (stable)
-5. Growth is fastest at $N = K/2$ (inflection point of S-curve)
-6. **Allee effect** adds a minimum viable population threshold $A$
-7. With Allee effect, **three equilibrium points**: $N = 0$ (stable), $N = A$ (unstable), $N = K$ (stable)
-8. Initial population determines long-term fate when Allee effect is present

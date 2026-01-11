@@ -22,7 +22,7 @@ Mathematical modeling is typically the result of a trade-off between accuracy an
 ### Types of Models
 
 
-```{image} images/types_of_models.png
+```{image} images/types_of_models
 :alt: Types of models.
 :width: 500px
 :align: center

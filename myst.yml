@@ -2,7 +2,6 @@ version: 1
 project:
   id: b1a3fa45-81e9-438f-ae08-234f44d2b383
   title: Math 172 Textbook (UofSC)
-#  logo: images/puddle-escher.jpg
   description: online text for math 172 - math modeling for the life-sciences created using Jupyter book
   keywords: 
     - math-models
@@ -25,7 +24,6 @@ project:
         - file: Simple_Continuous_Models/Malthusian_Model.md 
         - file: Simple_Continuous_Models/SlopeFields_PhaseLines.md
         - file: Simple_Continuous_Models/Logistic_Model.md 
-        - file: Simple_Continuous_Models/DiffEqns_for_ExpGrowth.md
         - file: Simple_Continuous_Models/BiochemicalKinetics.md
     - title: Discrete Models
       children:
@@ -44,6 +42,7 @@ project:
         - file: Genetic_Inheritance/Mendel_Punnett_Squares.md
         - file: Genetic_Inheritance/DNA_Sequences.md 
     - file: Bibliography.md
+    - file: Appendix.md
 
   exports:
     - format: pdf

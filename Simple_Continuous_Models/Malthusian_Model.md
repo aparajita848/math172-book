@@ -1,8 +1,5 @@
-# Single Species Population Modelling - The Malthusian Model
-
-*Notes- Joe Foster, 2020*
-
-## How Many?
+# The Malthusian (Unlimited) Growth Model
+## Single-species Population Model
 
 A population is a group of organisms, all of the same species, that live together. A population can increase, by reproduction, and decrease, by death. We will start by looking at simple models that can be used to predict population size. Later on in the class we will create more sophisticated models as we consider more and more different factors that can influence population size.
 
@@ -122,7 +119,7 @@ $$
 
 ### Example 2
 
-Papua New Guinea currently has a population of 8.510 million people. The net growth rate is currently 172,753 people per year. Compute the intrinsic growth rate $r$ and write a continuous differential equation modelling the population. Give an explicit formula for the population size and use it to predict the population a decade from now.
+Papua New Guinea currently has a population of 8.510 million people. The net growth rate is currently 172,753 people per year. Compute the intrinsic growth rate $r$ and write a continuous differential equation modeling the population. Give an explicit formula for the population size and use it to predict the population a decade from now.
 
 <span style="color: brown;">*Solution.*</span>
 
@@ -203,24 +200,3 @@ $$
 t_D = \frac{\ln(2)}{0.12} = 5.776 \text{ years}
 $$
 
----
-
-## Symbol Reference
-
-| Symbol | Meaning |
-|--------|---------|
-| $b$ | Instantaneous birth rate |
-| $B$ | Number of births |
-| $d$ | Instantaneous death rate |
-| $D$ | Number of deaths |
-| $\Delta N$ | Change in population size between time $t$ and $t+1$ |
-| $\frac{dN}{dt}$ | Population growth rate |
-| $e$ | Euler's number |
-| $E$ | Number of emigrants leaving the population |
-| $I$ | Number of immigrants entering the population |
-| $N$ | Population size |
-| $N_0$ | Initial population |
-| $N_t$ | Population size at time $t$ |
-| $r$ | Instantaneous rate of increase |
-| $t$ | Time |
-| $t_D$ | Doubling time |

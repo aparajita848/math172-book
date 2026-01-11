@@ -5,7 +5,6 @@ title: Forward
 This is an open-source text for students taking MATH 172: Mathematical Modeling for the Life Sciences at UofSC. The topics in this course range from ecological population models to genetics and biomolecular kinetics. 
 
 
-
 % Why is it necessary to study Mathematical Modeling of Biological phenomena 
 %The science of ecology is the study of distribution and abundance. In other words, we are interested in predicting where organisms occur (distribution), and the sizes of their population (abundance). Ecological studies rely on measurement of distribution and abundance in nature, so we need tools of mathematics and statistics to summarize and interpret these measurements.
 
@@ -28,5 +27,5 @@ _Please note that it is still a work-in-progress and will be updated routinely._
 :::
 
 %+++ {"part": "acknowledgements"}
-%This course was originally created by Dr. Matt Miller; we are further grateful to all the past instructors of Math 172 - Dr. Paula Vasquez, Joe Foster, Jonathan Smith; who have contributed their time and effort to this course; their notes serve as the basis for this textbook.
+%This course was originally created by Dr. Matt Miller; we are further grateful to all the past instructors of Math 172 - Dr. Paula Vasquez, Joe Foster, Jonathan Smith, Victoria Chebotaeva; who have contributed their time and effort to this course; their notes serve as the basis for this textbook.
 %+++
