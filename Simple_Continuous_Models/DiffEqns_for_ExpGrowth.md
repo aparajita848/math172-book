@@ -136,15 +136,7 @@ for $C$ an arbitrary constant.
 Since $e^{rt}$ is always positive, the constant $C$ determines the sign of the function as a whole - whether its graph lies above or below the $t$ axis.
 :::
 
-:::{figure}
-:label: exp_curves
-:align: center
-
-(exp_curves_r)=
-![Exponential growth and decay curves for $r>0$](images/exp_curves_pos_r.png)
-
-![Exponential growth and decay curves for $r<0$](images/exp_curves_neg_r.png)
-:::
+% Add simulation here.
 ---
 
 ## Solutions to a Differential Equation
