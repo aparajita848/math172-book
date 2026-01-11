@@ -25,3 +25,37 @@ We can elicit a considerable amount of information about the population growth b
 5. The line $N_{t+1}=N_t$ is now used to start again with $N_1$ in the place of $N_0$.
 6. We then get $N_2$ by proceeding as before and then $N_3, N_4$ and so on.
 7. The arrows show the path sequence. *This path is simply a series of reflections in the line $N_{t+1}=N_t$*
+
+
+
+---
+
+## Exercises
+
+:::{tip} Exercise 1
+:class: dropdown
+:open: true
+
+
+:::
+
+:::{tip} Solution to Exercise 1
+:icon: false
+:class: dropdown
+
+
+:::
+
+:::{tip} Exercise 2
+:class: dropdown
+:open: true
+
+
+:::
+
+:::{tip} Solution to Exercise 2
+:icon: false
+:class: dropdown
+
+
+:::
