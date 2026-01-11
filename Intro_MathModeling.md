@@ -46,13 +46,14 @@ A model can be regarded as a caricature of a real system by capturing the key el
 ```
   1. Formulate the question
 
-To construct a model, we first need to begin with the 
+To construct a model, we first need to begin with our _hypothesis_, or the question we further wish to investigate. We can write down the various **assumptions** that describe our model - these assumptions are the factors or restrictions to be considered for our model.
 	
 %The hardest step is to provide a formal set of equations. The single most important aid to this endeavor is what can be called **bookkeeping**. This is the process of keeping track of some quantity that remains invariant
 
 2. Determine the basic ingredients
 
-After identifying our _independent_ and _dependent_ variables; for example, if we are studying the , we can choose the kind of equations 
+After identifying our _independent_ and _dependent_ variables; for example, in ecology, we often study the varying population sizes of certain species in time - so the independent variable would be time ($t$) and the dependent variable would be $N(t)$, the population size. We need to further choose the 
+
 3. Drawing qualitative conclusions
 
 Manipulation of model equations yields two types of results, quantitative and qualitative. The value of quantitative results is clear, but qualitative conclusions might be even more useful. One 
