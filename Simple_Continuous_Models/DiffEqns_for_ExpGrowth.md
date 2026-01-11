@@ -5,13 +5,12 @@
 :open: true
 Evaluate the following derivatives:
 
-```{math}
-:nonumber:
-\begin{align}
+$$
+\begin{aligned}
 \frac{d}{dx}[e^x] &= \\
 \frac{d}{dx}[e^{kx}] &=
-\end{align}
-```
+\end{aligned} \nonumber
+$$
 
 Suppose that $y_1=e^x$ and $y_2=e^{kx}$, rewrite the derivatives in terms of $y_1$ and $y_2$.
 :::
@@ -20,20 +19,21 @@ Suppose that $y_1=e^x$ and $y_2=e^{kx}$, rewrite the derivatives in terms of $y_
 :icon: false
 :class: dropdown
 
-:::{math}
-:enumerated: false
-\begin{align}
+$$
+\begin{equation*}
+\begin{aligned}
 \frac{d}{dx}[e^x] &= e^x \\
 \frac{d}{dx}[e^{kx}] &= ke^{kx}
-\end{align}
-:::
+\end{aligned}
+\end{equation*}
+$$
 
 Observe that the derivative of the function $e^x$ is itself, therefore, if $y_1=e^x$ then
 
-:::{math}
-:enumerated: false
-\frac{de^x}{dx}=e^x 
-:::
+$$
+\frac{de^x}{dx}=e^x \notag
+$$
+
 :::{math}
 :label: diff_eq_exp1
 \implies \frac{dy_1}{dx}=y_1
