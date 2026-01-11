@@ -1,20 +1,20 @@
 # Differential Equations for Exponential Growth & Decay[^Source:{cite} (edited for the purpose of this course.)]
 
-::::{tip} Warm-up
+:::{tip} Warm-up
 :class: dropdown
 :open: true
 Evaluate the following derivatives:
 
-:::{math}
-:enumerated: false
+```{math}
+:nonumber:
 \begin{align}
 \frac{d}{dx}[e^x] &= \\
 \frac{d}{dx}[e^{kx}] &=
 \end{align}
-:::
+```
 
 Suppose that $y_1=e^x$ and $y_2=e^{kx}$, rewrite the derivatives in terms of $y_1$ and $y_2$.
-::::
+:::
 
 ::::{tip} Solution
 :icon: false
