@@ -49,7 +49,7 @@ project:
     - format: pdf
       template: plain_latex_book
       articles: intro.md
-  references:
+  bibliography:
     - ref.bib
     
 site:
