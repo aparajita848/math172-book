@@ -2,8 +2,7 @@
 title: Bibliography
 ----
 
-```{bibliography}
-:path: ref.bib
+````{bibliography} ref.bib
 :all:
 :style: plain
-```
+````
