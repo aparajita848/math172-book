@@ -24,7 +24,7 @@ where $\Delta t = h$ is a small time increment. Then
 
 $$
 \begin{equation*}
-\begin{align*}
+\begin{aligned}
     \Delta N = N(t+h)-N(t) =& [\text{Change in $N$}]\\
     =& [\text{Number of births}] - [\text{Number of deaths}]
 \end{aligned}
@@ -52,20 +52,25 @@ Our next assumption that we will impose on our populations is that they grow **c
 
 For simplicity, we finally assume that all individuals are identical and that the number of births per unit time is :::directly proportional::: to the population size. For example, the more rabbits there are, the more births of baby bunnies will occur. If each member of the population produces the same number of offspring during the time interval, then the birth rate will be directly proportional to the current population. Denote by $b$ the constant of proportionality. Similarly, we assume that the number of deaths per unit time is also directly proportional to population size with $d$ the constant of proportionality.
 
+$$
 \begin{equation*}
 \begin{aligned}
     b =& \text{per capita birth rate} = \dfrac{\text{number of births per unit time}}{\text{population size}}\\
     d =& \text{per capita death rate} = \dfrac{\text{number of deaths per unit time}}{\text{population size}}
 \end{aligned}
 \end{equation*}
+$$
 
 Consequently, we have
+
+$$
 \begin{equation*}
 \begin{aligned}
     \text{Number of births per unit time} =& bN\\
     \text{Number of deaths per unit time} =& dN
 \end{aligned}
 \end{equation*}
+$$
 
 We refer to constants such as $b,d$ as **parameters**. In general, for a given population, these would have specific numerical values that could be found through experiment, by collecting data, or by making simple assumptions.  Taking the assumptions and the form of the balance equation [](#rate_birth_death) together we have:
 
@@ -109,6 +114,7 @@ born, so that the population shrinks and (eventually) go extinct.
 ## Doubling-Time & Half-life
 
 One property of an exponential model is that, despite its net growth depending on the current population size, the **doubling time** of the population is constant no matter the current size. That is, the time it takes for a population to grow from $100$ to $200$ is the same amount of time that it would take to grow from $800$ to $1600$ - the population will always double after a fixed time period. For a growing population ($r>0$), solving for the doubling time is relatively simple. We want to find a time $t_D$ so that 
+
 $$
 \begin{equation*}
 N_{t_D}=2N_0.
@@ -116,12 +122,14 @@ N_{t_D}=2N_0.
 $$
 
 Substituting this into equation [](#rate_birth_death_sol) yields
+
 $$
 \begin{equation*}
 2N_0=N_0e^{rt_D}.
 \end{equation*}
 
 Solving for $t_D$ is simple now and we obtain the **doubling-time**:
+
 $$
 \begin{equation*}
 t_D=\frac{\ln(2)}{r}.
@@ -129,6 +137,7 @@ t_D=\frac{\ln(2)}{r}.
 $$
 
 Similarly, for a **decaying population with negative growth rate** ($r<0$):
+
 $$
 \begin{equation*}
 N_{t_H}=\dfrac{N_0}{2}.
@@ -136,6 +145,7 @@ N_{t_H}=\dfrac{N_0}{2}.
 $$
 
 Substituting this into equation [](#rate_birth_death_sol) yields
+
 $$
 \begin{equation*}
 \begin{aligned}
@@ -147,6 +157,7 @@ $$
 $$
 
 The **half-life** is given by:
+
 $$
 \begin{equation*}
 t_H = \frac{\ln(1/2)}{r}=& \dfrac{- \ln(2)}{r},\quad r<0.

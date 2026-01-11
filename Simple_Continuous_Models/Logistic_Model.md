@@ -4,36 +4,45 @@
 ## Introduction
 
 In the Malthusian model, we encountered the differential equation:
+
 $$
 \begin{equation*}
 \dfrac{dN}{dt}=rN,
 \end{equation*}
 $$
+
 where $N(t)$ is the population size at time $t$ and $r$ is the constant representing per capita growth rate. We showed that this differential equation has exponential solutions. It means that two behaviours are generically obtained: explosive growth if $r > 0$ or extinction if $r < 0$.
 
 The case of $r > 0$ is unrealistic in the long-run, since real populations cannot keep growing indefinitely in an explosive, exponential way. Eventually running out of space or resources, the population growth dwindles, and the population attains some static level rather than expanding forever. This motivates a revision of our previous model to depict **density-dependent growth**.
 
 Intuitively, the higher the population, the more resources are being used. So, as resources deplete, the birth rate should slow down. If it doesn't, the resources run dry and everybody dies. We start with the familiar exponential model
+
 $$
 \begin{equation*}
 \frac{dN}{dt}=(b'-d')N,
 \end{equation*}
 $$
+
 but instead of $b'$ and $d'$ being constant, we will modify them to be density dependent and reflect **_crowding_**.
 
 As a population becomes more crowded, we expect the per capita birth rate to decrease, since there are fewer resources per organism available. So let's start with the simplest decreasing function - a straight line with negative slope.
+
 $$
 \begin{equation*}
 b'=b-aN
 \end{equation*}
 $$
+
 where $b$ and $a$ are constants. Notice how if the population is small then $b'\approx b$, so then we are essentially in the ideal conditions of unlimited resources. Then as $N$ grows larger we move away from that. So, $b$ is the same as it was in the exponential model - it is the instantaneous per capita birth rate when resources are unlimited. The constant $a$ measures the strength of the density dependence. If $a$ is large, then the birth rate drops sharply as the population grows. If there is no dependence on population - i.e. $a=0$ - then we obtain the exponential model as before. So we are generalizing our model. The same idea can be applied to death rates - as the population grows, death rates should increase. So,
+
 $$
 \begin{equation*}
 d'=d+cN
 \end{equation*}
 $$
+
 for constants $d$ and $c$, where $d$ is as in the exponential model and $c$ is the strength of the density dependence. Combining the above equations then, we have
+
 $$
 \begin{equation*}
 \frac{dN}{dt}=\left((b-aN)-(d+cN)\right)N=\left((b-d)-(a+c)N\right)N.
@@ -45,6 +54,7 @@ $$
 \frac{dN}{dt}=(b-d)\left(1-\frac{(a+c)}{(b-d)}N\right)N.
 \end{equation*}
 $$
+
 As with the exponential model, let $r=b-d$ and define 
 
 $$

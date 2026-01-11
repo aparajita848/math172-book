@@ -8,7 +8,7 @@ In this section we will learn to recognize and formulate the governing equations
 
 Let's consider a simple case where a **biological complex switches between two states**. One prototypical example is ion channels, which are pores in the membrane of a cell that are responsible for the electric conductance of membranes. The channel molecules typically shift between open and closed configurations.
 
-![Molecular switch](images/ionC.png)
+%Add figure
 
 The conventional description of a molecule shifting between two states, $A$ and $B$ (for example, open and closed), is the ***kinetic scheme***,
 
@@ -133,7 +133,7 @@ $$
 so that
 
 $$
-\Begin{equation*}
+\begin{equation*}
 \begin{aligned}
 \lim_{t\to \infty} A &= \lim_{t\to \infty} \left[A_{\infty} - (A_{\infty} -A_0) e^{-(k_1 + k_{-1}) t} \right]\\
 &= A_{\infty} - (A_{\infty} -A_0)\lim_{t\to \infty} e^{-(k_1+ k_{-1})}\\
@@ -148,8 +148,8 @@ $$
 $$
 \begin{equation*}
 \begin{cases}
-\dfrac{dA}{dt} = -k_1A+k_{-1}B=0\\ 
-\dfrac{dB}{dt} = k_1A-k_{-1}B=0
+\frac{dA}{dt} = -k_1A+k_{-1}B=0\\ 
+\frac{dB}{dt} = k_1A-k_{-1}B=0
 \end{cases}
 \implies k_1A=k_{-1}B
 \end{equation*}
@@ -171,6 +171,7 @@ If $k_1 = 0.1$, $k_{-1} = 0.5$, and
 
 :::{tip} Solution
 :icon: false
+:class: dropdown
 
   Note that in the formula for $A_{\infty}$, the long term behaviour of $A$ depends on the rates of conversion and the total concentration $M$. Since they are the same for both cases, both will have the same concentration of $A$ in the long-term.
 :::
@@ -179,11 +180,14 @@ If $k_1 = 0.1$, $k_{-1} = 0.5$, and
 
 :::{tip} Solution
 :icon: false
-  $$
+:class: dropdown
+
+$$
 \begin{equation*}
   A_{\infty} = \frac{k_{-1}M}{k_1+k_{-1}} = \frac{0.5 \cdot (100)}{0.1+0.5} = \frac{50}{0.6} = 83.33
 \end{equation*}
-  $$
+$$
+
 :::
 
 - Is $A$ growing or decaying in (a)? in (b)?
@@ -201,6 +205,7 @@ For $k_1 = 0.25$ and $A_0 = 10$, the two figures below show the concentration of
 
 :::{tip} Solution
 :icon: false
+:class: dropdown
 
 :::
 
@@ -208,6 +213,7 @@ For $k_1 = 0.25$ and $A_0 = 10$, the two figures below show the concentration of
 
 :::{tip} Solution
 :icon: false
+:class: dropdown
 
 :::
 
