@@ -3,16 +3,15 @@
 :::{tip} Warm-up
 :class: dropdown
 :open: true
-Evaluate the following derivatives:
+Evaluate the following derivative:
 
 $$
-\begin{aligned}
-\frac{d}{dx}[e^x] &= \\
-\frac{d}{dx}[e^{kx}] &=
-\end{aligned} \nonumber
+\begin{equation*}
+\frac{d}{dx}[e^x] = 
+\end{equation*}
 $$
 
-Suppose that $y_1=e^x$ and $y_2=e^{kx}$, rewrite the derivatives in terms of $y_1$ and $y_2$.
+Suppose that $y=e^x$, rewrite the derivative in terms of $y$.
 :::
 
 ::::{tip} Solution
@@ -21,38 +20,25 @@ Suppose that $y_1=e^x$ and $y_2=e^{kx}$, rewrite the derivatives in terms of $y_
 
 $$
 \begin{equation*}
-\begin{aligned}
-\frac{d}{dx}[e^x] &= e^x \\
-\frac{d}{dx}[e^{kx}] &= ke^{kx}
-\end{aligned}
+\frac{d}{dx}[e^x] = e^x
 \end{equation*}
 $$
 
-Observe that the derivative of the function $e^x$ is itself, therefore, if $y_1=e^x$ then
+Observe that the derivative of the function $e^x$ is itself, therefore, if $y=e^x$ then
 
-$$
-\frac{de^x}{dx}=e^x \notag
-$$
-
-:::{math}
-:label: diff_eq_exp1
-\implies \frac{dy_1}{dx}=y_1
-:::
-And similarly, if we let $y_2=e^{kx}$,
 :::{math}
 :enumerated: false
-\frac{de^{kx}}{dx}=ke^{kx} 
+\frac{de^x}{dx}=e^x 
 :::
 :::{math}
-:label: diff_eq_exp2
-\implies \frac{dy_2}{dx}=ky_2
+:label: diff_eq_exp
+\implies \frac{dy}{dx}=y
 :::
 
-The equations on the right in [](#diff_eq_exp1) and [](#diff_eq_exp2) (linking a function to its own derivative) are a new kind of equations called a **differential equation** (abbreviated DE). We say that $y_1=e^x$ is a function that "satisfies" equation [](#diff_eq_exp1), and we call this a **solution to the differential equation**. 
+The equation [](#diff_eq_exp) (linking a function to its own derivative) are a new kind of equations called a **differential equation** (abbreviated DE). We say that $y=e^x$ is a function that "satisfies" equation [](#diff_eq_exp), and we call this a **solution to the differential equation** [](#diff_eq_exp). 
 
-And similarly, $y_2=e^{kx}$ is a solution to the differential equation [](#diff_eq_exp2).
 ::::
----
+
 
 
 **Definition**: A **differential equation** is a mathematical equation that relates one or more derivatives of some function to the function itself. Solving the differential equation is the process of identifying the function(s) that satisfies the given relationship.
@@ -64,7 +50,9 @@ The solution to an algebraic equation is a number, whereas the solution to a dif
 Since we are interested in observing changing populations over time, we will henceforth use the independent variable $t$ for time and the dependent variable as $N$ for the population size.
 
 $$
+\begin{equation*}
 N(t) = \text{population size as a function of time } t.
+\end{equation*}
 $$
 
 ### _Observations_
@@ -72,7 +60,9 @@ $$
 1. Consider the function $N(t)=e^t$. Show that this function satisfies the differential equation
 
 $$
+\begin{equation*}
 \frac{dN}{dt}=N
+\end{equation*}
 $$
 
 :::{tip} Solution
@@ -81,18 +71,21 @@ $$
 Differentiating the function $N(t)=e^t$ gives
 
 $$
-\begin{aligned*}
+\begin{equation*}
+\begin{aligned}
 \frac{dN}{dt} &= \frac{d}{dt}[e^t]=e^t\\
 \frac{dN}{dt} &= N
-\end{aligned*}
+\end{aligned}
+\end{equation*}
 $$
 :::
 
 2. The function $N(t)=e^{rt}$ (for $r$ constant) satisfies the differential equation
 
-$$
+:::{math}
+:label: diff_eq_exp_r
 \frac{dN}{dt}=rN \tag{1}
-$$
+:::
 
 :::{tip} Solution
 :icon: false
@@ -100,13 +93,17 @@ $$
 We can verify by differentiating $N(t)=e^{rt}$, using the chain rule. Setting $u=rt$, and $N(t) = e^u$, we have
 
 $$
-\begin{align*}
+\begin{equation*}
+\begin{aligned}
 \frac{dN}{dt} &= \frac{dN}{du}\cdot \frac{du}{dt}=e^u\cdot r = re^u = rN\\
 \implies \frac{dN}{dt} &= rN
-\end{align*}
+\end{aligned}
+\end{equation*}
 $$
 
-_It is interesting to ask: Is this the only function that satisfies the differential equation (1)? Are there other possible solutions? What about a function such as $N(t) = 2e^{rt}$ or $N(t) = 400e^{rt}$?_
+_It is interesting to ask: Is this the only function that satisfies the differential equation [](#diff_eq_exp_r)? Are there other possible solutions? What about a function such as $N(t) = 2e^{rt}$ or $N(t) = 400e^{rt}$?_
+
+:::
 
 :::{note}
 For any constant $C$, the function $N(t) = Ce^{rt}$ is a solution to the DE (1). _(verify by differentiating)_
@@ -118,13 +115,17 @@ For any constant $C$, the function $N(t) = Ce^{rt}$ is a solution to the DE (1).
 Solutions to the differential equation
 
 $$
+\begin{equation*}
 \frac{dN}{dt}=rN
+\end{equation*}
 $$
 
 are the functions
 
 $$
+\begin{equation*}
 N(t)=Ce^{rt}
+\end{equation*}
 $$
 
 for $C$ an arbitrary constant.
@@ -149,9 +150,8 @@ Hence, in order to distinguish one specific solution of interest, we need additi
 
 **Definition**: An **initial value** for a differential equation is a specified, known value of the solution at some specific time point (usually at time $t = 0$).
 
----
 
-### Example
+#### Example
 
 Given the differential equation $\frac{dN}{dt}=rN$ and initial value $N(0)=N_0$, find the value of $C$ for the solution in equation $N(t)=Ce^{rt}$.
 
@@ -173,7 +173,6 @@ $$
 N(t)=N_0e^{rt}, \text{ where } N_0 \text{ is the initial value.}
 $$
 
----
 
 :::{important} **Unique Solution**
 :icon: false
@@ -209,6 +208,7 @@ $$
 that satisfies the initial condition $N(0)=3$. Describe the behaviour of the solution you have found *(sketch a graph)*.
 :::
 :::{tip} Solution to Exercise 1
+:icon: false
 :class: dropdown
 The differential equation (DE) indicates that $r=-0.5$, so solutions are exponential functions of the form $N(t)=N_0e^{rt}$ and $N_0=3$, so the solution is
 
@@ -232,6 +232,7 @@ $$
 :::
 
 :::{tip} Solution to Exercise 2
+:icon: false
 :class: dropdown
  If we do what we have done before in previous problems, then we obtain the solution
 
