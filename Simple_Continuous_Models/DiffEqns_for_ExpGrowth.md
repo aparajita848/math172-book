@@ -1,6 +1,6 @@
 # Differential Equations for Exponential Growth & Decay[^Source:{cite} (edited for the purpose of this course.)]
 
-:::{tip} Warm-up
+::::{tip} Warm-up
 :class: dropdown
 :open: true
 Evaluate the following derivatives:
@@ -14,11 +14,12 @@ Evaluate the following derivatives:
 :::
 
 Suppose that $y_1=e^x$ and $y_2=e^{kx}$, rewrite the derivatives in terms of $y_1$ and $y_2$.
-:::
+::::
 
-:::{tip} Solution
+::::{tip} Solution
 :icon: false
 :class: dropdown
+
 :::{math}
 :enumerated: false
 \begin{align}
@@ -50,7 +51,7 @@ And similarly, if we let $y_2=e^{kx}$,
 The equations on the right in [](#diff_eq_exp1) and [](#diff_eq_exp2) (linking a function to its own derivative) are a new kind of equations called a **differential equation** (abbreviated DE). We say that $y_1=e^x$ is a function that "satisfies" equation [](#diff_eq_exp1), and we call this a **solution to the differential equation**. 
 
 And similarly, $y_2=e^{kx}$ is a solution to the differential equation [](#diff_eq_exp2).
-:::
+::::
 ---
 
 
