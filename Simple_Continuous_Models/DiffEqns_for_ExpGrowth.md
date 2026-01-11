@@ -136,10 +136,15 @@ for $C$ an arbitrary constant.
 Since $e^{rt}$ is always positive, the constant $C$ determines the sign of the function as a whole - whether its graph lies above or below the $t$ axis.
 :::
 
-![Exponential growth and decay curves](figures/exponential-curves.png)
+:::{figure}
+:label: exp_curves
+:align: center
 
-*Left panel: $r>0$ (growth), Right panel: $r<0$ (decay)*
+(exp_curves_r)=
+![Exponential growth and decay curves for $r>0$](images/exp_curves_pos_r.png)
 
+![Exponential growth and decay curves for $r<0$](images/exp_curves_neg_r.png)
+:::
 ---
 
 ## Solutions to a Differential Equation
@@ -182,7 +187,7 @@ $$
 N(t)=N_0e^{rt}, \text{ where } N_0 \text{ is the initial value.}
 \end{equation*}
 $$
-
+:::
 
 :::{important} **Unique Solution**
 :icon: false
@@ -192,7 +197,7 @@ The **(unique) solution** to the differential equation
 $$
 \begin{equation*}
 \frac{dN}{dt}=rN
-\end{equation*]
+\end{equation*}
 $$
 
 with the initial condition $N(0)=N_0$ is the function
