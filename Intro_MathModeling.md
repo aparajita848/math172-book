@@ -10,9 +10,7 @@
 > -- Albert Einstein
 
 
-The complexity of the biological sciences makes interdisciplinary involvement essential... for the biologist, mathematical modeling offers another research tool commensurate with a new powerful laboratory technique but _only_ if used appropriately and its limitations recognized.{cite}`Murray2002`. In particular, we can use mathematical models to study complex interactions in nature through a simplified and structured lens. Further, models also generate testable predictions. By trying to verify or refute these predictions, we will make much faster progress in understanding nature. The models highlight the distinction between the _patterns_ we see in nature and the different _mechanisms_ that might cause those patterns {cite}`Gotelli1998`. 
-
-A model can be regarded as a caricature of a real system {cite}`Segel2013` by capturing the key elements, while the detail is neglected. Concentration on the essential is a central feature of a good model {cite}`Segel2013`. Models that describe changing systems do so by formulating a set of differential equations. Analysis of various sorts can then determine what the model predicts (in terms of a solution to the set of equations). 
+A model can be regarded as a caricature of a real system {cite}`Segel2013` by capturing the key elements, and neglecting the detail.  In particular, we can use mathematical models to study complex interactions in nature through a simplified and structured lens. Models also generate testable predictions and by trying to verify or refute these predictions, we can further investigate the underlying mechanism of the system that we are attempting to study. 
 
 
 **Definition:** A mathematical model is a representation of the essential aspects of a new or existing system, which presents knowledge of that system in usable form. Models are not replicas of reality, they are simplified representations of it.
@@ -28,8 +26,21 @@ Mathematical modeling is typically the result of a trade-off between accuracy an
 :align: center
 ```
 
+In general, mathematical models ca
+
+In our course, we will focus on deterministic dynamical models, and study both scenarios; when time is measured discretely vs. continuously. Discrete-time dynamical systems describe a sequence of measurements made at equally spaced intervals. These dynamical systems are described mathematically by a rule that gives the value at one time as a function of the value at the previous time. Continuous-time dynamical systems, usually called **differential equations**, describe measurements that are collected over an entire time interval. A differential equation consists of a rule that gives the **instantaneous rate of change** of a set of measurements.
+
 
 ### Model Components
+
+
+
+**Definition:** A **variable** is a symbol that represents a measurement that can change during the course of an experiment. 
+
+**Definition:** A **parameter** is a symbol that represents a measurement that does not change during the course of an experiment. 
+
+:::{important} Summary of model components
+:icon: false
 
 - **Variables**
   - independent
@@ -44,6 +55,8 @@ Mathematical modeling is typically the result of a trade-off between accuracy an
   - A parametric equation is an equation for which the solutions are sought as functions of some other variables
   - A differential equation is a functional equation involving derivatives of the unknown functions.  ODE, PDE.
   - A stochastic equations includes a random term or variable, they can be algebraic or differential (SDEs).
+
+:::
 
 ### How to Construct a Model
 
@@ -69,7 +82,9 @@ It may be possible to draw qualitative conclusions from a model without using an
 
 
 
-### Dangers/Successes & failures of mathematical modeling
+### Successes & failures of mathematical modeling
+
+The complexity of the biological sciences makes interdisciplinary involvement essential... for the biologist, mathematical modeling offers another research tool commensurate with a new powerful laboratory technique but _only_ if used appropriately and its limitations recognized.{cite}`Murray2002`.
 
 The modeling process is considered successful when the obtained model possesses the following characteristics:
 - **Accurate:** the model should attempt to accurately describe current existing observations.

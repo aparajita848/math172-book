@@ -1,4 +1,4 @@
-# Genetic Inheritance
+# Mendel's Punnett Squares
 ## Introduction
 
 ---
