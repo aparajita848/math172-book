@@ -10,7 +10,7 @@
 > -- Albert Einstein
 
 
-A model can be regarded as a caricature of a real system by capturing the key elements, and neglecting the detail ({cite}`Segel2013`).  In particular, we can use mathematical models to study complex interactions in nature through a simplified and structured lens. They also generate testable predictions and by trying to either verify or refute these predictions, we can further investigate the underlying mechanism of the system that we are attempting to study. 
+A model can be regarded as a caricature of a real system by capturing the key elements, and neglecting the details ({cite}`Segel2013`).  In particular, we can use mathematical models to study complex interactions in nature through a simplified and structured lens. They also generate testable predictions and by trying to either verify or refute these predictions, we can further investigate the underlying mechanism of the system that we are attempting to study. 
 
 
 **Definition:** A mathematical model is a representation of the essential aspects of a new or existing system, which presents knowledge of that system in a usable form. Models are not replicas of reality, they are simplified representations of it.
@@ -47,7 +47,7 @@ A model can be regarded as a caricature of a real system by capturing the key el
 :align: center
 ```
 
-In general, mathematical models ca
+Fundamentally, mathematical models can be categorized in three main ways. First, models are either discrete or continuous based on how the data is measured. Second, they can be deterministic or stochastic depending on predictability; whether the same inputs always produce the same outputs, or whether randomness causes different outputs each time. Third, models are classified as static or dynamic based on whether they describe a system at a single point in time or show how the system evolves over time. 
 
 In our course, we will focus on deterministic dynamical models, but study both cases; when time is measured discretely vs. continuously. Discrete-time dynamical systems describe a sequence of measurements made at equally spaced intervals. These dynamical systems are described mathematically by a rule that gives the value at one time as a function of the value at the previous time. Continuous-time dynamical systems, usually called **differential equations**, describe measurements that are collected over an entire time interval. A differential equation consists of a rule that gives the **instantaneous rate of change** of a set of measurements ({cite}`Adler2013`).
 
