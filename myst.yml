@@ -24,6 +24,9 @@ project:
         - file: Simple_Continuous_Models/Malthusian_Model.md 
         - file: Simple_Continuous_Models/SlopeFields_PhaseLines.md
         - file: Simple_Continuous_Models/Logistic_Model.md 
+        - title: Variations to the Logistic Model
+          children:
+            - file: Simple_Continuous_Models/Logistic_Model_Var_Harvesting.md 
         - file: Simple_Continuous_Models/BiochemicalKinetics.md
     - title: Discrete Models
       children:
