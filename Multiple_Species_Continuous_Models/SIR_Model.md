@@ -28,8 +28,9 @@ However, that we have already **assumed that** the disease we are discussing is 
 
 In this **$SIR$ model**, individuals of the population progress through the three classes in order: susceptibles remain disease-free or become infected; infected individuals pass through an infectious period until they recover from the disease; and a recovered individual is never at risk again (having developed permanent immunity against the disease). Schematically, we can think of the model as:
 
-
-\boxed{Susceptibles}$\Longrightarrow$\boxed{Infected}$\Longrightarrow$\boxed{Recovered}
+$$
+\boxed{Susceptibles}\Longrightarrow\boxed{Infected}\Longrightarrow\boxed{Recovered}
+$$
 
 Disease spreads when a susceptible individual comes in contact with an infected individual and subsequently becomes infected. Therefore, the number of susceptibles decreases as susceptibles become ill. Then, the differential equation modeling the suscpetible population can be given by:
 
@@ -41,19 +42,18 @@ $$
 
 where $\alpha$ is the **transmission coefficient**, which measures the likelihood that a contact between a susceptible and an infected will result in a new infection.
 
-:::{attention} ? Question
+:::{attention} Question
 :icon: false
 If $\alpha_1$ for one disease is smaller than $\alpha_2$ $(\alpha_1<\alpha_2)$ for another disease, what does this indicate about the difference between the diseases? If this is the only difference between the diseases, which will spread faster? Can you give an example?
-::
+:::
 
 The infected population $I$, grows by the addition of newly infected. At the same time, some infected individuals may recover or die, and so progress to the recovered/removed stage of the disease. The recovered/removed population increases in size, by exactly the same amount that the infected class decreases. Therefore, our other two differential equations can be written as:
 
 $$
 \begin{equation*}
 \begin{aligned}
-    \dfrac{dI}{dt}=& {\colour \alpha SI - \beta I }\\
-    \\
-    \dfrac{dR}{dt} =& {\colour \beta I}
+    \dfrac{dI}{dt}=&  \alpha SI - \beta I \\
+    \dfrac{dR}{dt} =& \beta I
 \end{aligned}
 \end{equation*}
 $$
@@ -66,29 +66,21 @@ $$
 \begin{equation*}
 \begin{aligned}
 \begin{cases}
-\dfrac{dS}{dt}={\colour -\alpha SI}\\
-\\\\
-\dfrac{dI}{dt}={\colour \alpha SI-\beta I}\\
-\\\\
-\dfrac{dR}{dt}={\colour \beta I}
+\dfrac{dS}{dt}=-\alpha SI\\
+\dfrac{dI}{dt}= \alpha SI-\beta I\\
+\dfrac{dR}{dt}= \beta I
 \end{cases}
 \hspace*{1cm}\begin{cases}
 \dfrac{dS}{dt}=-aSI+rR\\
-\\
 \dfrac{dI}{dt}=aSI-bI\\
-\\
 \dfrac{dR}{dt}=bI-rR
 \end{cases}\hspace*{1cm}\begin{cases}
 \dfrac{dS}{dt}=cN-aSI-cS\\
-\\
 \dfrac{dI}{dt}=aSI-bI-cI\\
-\\
 \dfrac{dR}{dt}=bI-cR
 \end{cases}\hspace*{1cm}\begin{cases}
 \dfrac{dS}{dt}=(c-v)N-aSI-cS\\
-\\
 \dfrac{dI}{dt}=aSI-bI-cI\\
-\\
 \dfrac{dR}{dt}=bI-cR+vN
 \end{cases}
 \end{aligned}
@@ -106,7 +98,7 @@ We can verify that the assumption the population remains constant is upheld, sin
 $$
 \begin{equation*}
 \begin{aligned}
-\frac{dN}{dt}={\colour \frac{dS}{dt}+\frac{dI}{dt}+\frac{dR}{dt}=0}.
+\frac{dN}{dt}=\frac{dS}{dt}+\frac{dI}{dt}+\frac{dR}{dt}=0.
 \end{aligned}
 \end{equation*}
 $$
@@ -127,6 +119,7 @@ $$
 \begin{equation*}
 R_0=\dfrac{\alpha}{\beta}
 \end{equation*}
+$$
 
 If $R_0>1$, it means that the transmission rate of the infection is higher than the recovery rate, so an epidemic is bound to occur. If $R_0<1$, the recovery rate is higher than the transmission rate ($\beta>\alpha$), so the number of recovered individuals should eventually surpass the number of infected, and the disease will eventually die out. _If $R_0=1$ then the transmission rate is equal to the recovery rate ($\alpha=\beta)$, and the disease will neither spread nor decline._ So we compare the initial susceptible population $S_0$ with the $R_0$ value to assess the disease outbreak.
 
@@ -138,7 +131,7 @@ The **herd immunity threshold (HIT)** is given by the formula:
 
 $$
 \begin{equation*}
-**HIT** = 1-\left(\dfrac{1}{R_0}\right)
+HIT = 1-\left(\dfrac{1}{R_0}\right)
 \end{equation*}
 $$
 
