@@ -1,7 +1,6 @@
 # Logistic with Harvesting
 
 ```{image} images/overfishing.jpg
-:alt: Types of models.
 :width: 500px
 :align: center
 ```
@@ -103,12 +102,10 @@ $$
 This variation of the logistic model results by **harvesting** at a non-constant rate _**proportional to the present population size $N$**_. _The effect is to decrease the instantaneous growth rate $r$ by the constant amount $h$ in the standard logistic model._
 
 ```{image} images/varH_sus.png
-:alt: Types of models.
 :width: 450px
 :align: left
 ```
 ```{image} images/varH_unsus.png
-:alt: Types of models.
 :width: 450px
 :align: right
 ```
