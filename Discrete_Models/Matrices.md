@@ -59,7 +59,7 @@ $$
 
 The first two operations work exactly how you might expect:
 
-**Matrix Addition**
+## Matrix Addition
 
 $$
 \begin{equation*}
@@ -74,7 +74,7 @@ $$
 
 Add corresponding entries
 
-**Scalar Multiplication**
+## Scalar Multiplication
 
 $$
 \begin{equation*}
@@ -89,7 +89,7 @@ $$
 
 Multiply each entry by the scalar.
 
-**Matrix Multiplication**
+## Matrix Multiplication
 
 Multiplication on the other hand is quite different. Though not hard once you get the hang of it, at first it may seem complicated.
 

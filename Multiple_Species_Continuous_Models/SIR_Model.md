@@ -52,7 +52,7 @@ The infected population $I$, grows by the addition of newly infected. At the sam
 $$
 \begin{equation*}
 \begin{aligned}
-    \dfrac{dI}{dt}=&  \alpha SI - \beta I \\
+    \dfrac{dI}{dt}=&  \alpha SI - \beta I \\ \\
     \dfrac{dR}{dt} =& \beta I
 \end{aligned}
 \end{equation*}
@@ -66,21 +66,21 @@ $$
 \begin{equation*}
 \begin{aligned}
 \begin{cases}
-\dfrac{dS}{dt}=-\alpha SI\\
-\dfrac{dI}{dt}= \alpha SI-\beta I\\
+\dfrac{dS}{dt}=-\alpha SI\\ \\
+\dfrac{dI}{dt}= \alpha SI-\beta I\\ \\
 \dfrac{dR}{dt}= \beta I
 \end{cases}
 \hspace*{1cm}\begin{cases}
-\dfrac{dS}{dt}=-aSI+rR\\
-\dfrac{dI}{dt}=aSI-bI\\
+\dfrac{dS}{dt}=-aSI+rR\\ \\
+\dfrac{dI}{dt}=aSI-bI\\ \\
 \dfrac{dR}{dt}=bI-rR
 \end{cases}\hspace*{1cm}\begin{cases}
-\dfrac{dS}{dt}=cN-aSI-cS\\
-\dfrac{dI}{dt}=aSI-bI-cI\\
+\dfrac{dS}{dt}=cN-aSI-cS\\\\
+\dfrac{dI}{dt}=aSI-bI-cI\\\\
 \dfrac{dR}{dt}=bI-cR
 \end{cases}\hspace*{1cm}\begin{cases}
-\dfrac{dS}{dt}=(c-v)N-aSI-cS\\
-\dfrac{dI}{dt}=aSI-bI-cI\\
+\dfrac{dS}{dt}=(c-v)N-aSI-cS\\ \\
+\dfrac{dI}{dt}=aSI-bI-cI\\ \\
 \dfrac{dR}{dt}=bI-cR+vN
 \end{cases}
 \end{aligned}
@@ -91,7 +91,7 @@ We now make some observations. The parameters $\alpha$ and $\beta$ are referred 
 
 Consider a single susceptible person, let's call him Rick. Now, Rick can catch the disease if he comes into contact with an infected person. It's unlikely Rick is popular enough to come into contact with everybody who is infected, so he will just come into contact with some proportion of them, say $p\cdot I$ of them, where $0\leq p<1$. Further, not every contact with a sick person will result in the spread of the disease, just another proportion of them, call this proportion $q$, where again $0\leq q<1$, and so the chances Rick will become infected is $q\cdot pI$. If we assume that there is nothing special about Rick and that everybody has the same chance of being infected, then per day we would expect $qpI\cdot S$ susceptible people will become infected. Let $\alpha=qp$ and we have $aSI$ people added to the infected population and $\alpha SI$ people lost from the susceptible population.
 
-Now lets suppose that the lifespan of the disease is, typically, $k$ days. Then after having the disease for $k$ days, Rick will get better. Now, without thinking too hard about this, there a $1/k$ chance that today is the day that Rick will get better. Again, assuming that Rick is not special, we would expect that $I/k$ of the infected people will become healthy today. Letting $b=1/k$ we have $bI$ people added to the recovered population and $bI$ people lost from the infected population. **_Therefore, $\dfrac{1}{\beta}$ measures the lifespan of the disease, or how long the disease lasts (on average) for an infected person._**
+Now let's suppose that the lifespan of the disease is, typically, $k$ days. Then after having the disease for $k$ days, Rick will get better. Now, without thinking too hard about this, there a $1/k$ chance that today is the day that Rick will get better. Again, assuming that Rick is not special, we would expect that $I/k$ of the infected people will become healthy today. Letting $b=1/k$ we have $bI$ people added to the recovered population and $bI$ people lost from the infected population. **_Therefore, $\dfrac{1}{\beta}$ measures the lifespan of the disease, or how long the disease lasts (on average) for an infected person._**
 
 We can verify that the assumption the population remains constant is upheld, since we have split the total population, $N$, into three disjoint categories, we have $N=S+I+R$. So,
 

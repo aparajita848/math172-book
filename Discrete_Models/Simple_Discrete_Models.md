@@ -219,7 +219,7 @@ $$
 
 $$
 \begin{equation*}
-    \begin{align*}
+    \begin{aligned}
         N_{t+1} =& N_t + c,\quad \text{given the initial value, $N_0$, we can find:}\\
         N_1 =& N_0 + c\\
         N_2 = N_1 + c =& N_0 +c+c = N_0 + 2c\\

@@ -48,7 +48,9 @@ $$
 \frac{dN}{dt}=\left((b-aN)-(d+cN)\right)N=\left((b-d)-(a+c)N\right)N.
 \end{equation*}
 $$
+
 If we multiply this equation by $1=(b-d)/(b-d)$, then we have
+
 $$
 \begin{equation*}
 \frac{dN}{dt}=(b-d)\left(1-\frac{(a+c)}{(b-d)}N\right)N.
@@ -82,11 +84,13 @@ The density dependent birth and death rates intersect when the population size i
 The point where $N=K$ forms a **stable equilibrium**. It means as long as the starting population is non-zero, the population size will always tend towards $K$.
 
 With the exponential growth model, we were able to write an explicit expression for the population size at any given time $t$. Although the derivation is more complicated, we can do the same with the logistic model:
+
 $$
 \begin{equation*}
 N_t=\frac{K}{1+\left(K-N_0)/N_0\right)e^{-rt}}.
 \end{equation*}
 $$
+
 Graphically, the logistic growth curve looks like an $S$-shaped curve. The tendency towards the carrying capacity is seen as a vertical asymptote.
 
 %Add graph
@@ -102,11 +106,13 @@ with intrinsic growth rate of $r = 0.3$ _(or 30\%)_ per year and carrying capaci
 
 :::{tip} Solution
 :icon: false
+
 $$
 \begin{equation*}
 \dfrac{dN}{dt}=0.3N\left(1-\dfrac{N}{10000}\right)
 \end{equation*}
 $$
+
 :::
 
 (b) Determine the equilibrium solutions for this model.
@@ -114,6 +120,7 @@ $$
 :::{tip} Solution
 :icon: false
 :class: dropdown
+
 $$
 \begin{equation*}
 \begin{aligned}
@@ -124,7 +131,9 @@ $$
 \end{aligned}
 \end{equation*}
 $$
+
 For the logistic equation, the equilibrium points lie at $N=0$ and the carrying capacity $N=K=10000$.
+
 :::
 
 (c) If 2500 fish are initially introduced into the lake,
@@ -133,22 +142,26 @@ For the logistic equation, the equilibrium points lie at $N=0$ and the carrying 
 :::{tip} Solution
 :icon: false
 :class: dropdown
+
 $$
 \begin{equation*}
 N_t=\frac{10000}{1+\left(\frac{10000-2500}{2500}\right)e^{-0.3t}}=\dfrac{10000}{1+3e^{-0.3t}}
 \end{equation*}
 $$
+
 :::
 
 (ii) Use it to estimate the number of fish in the lake after 5 years.
 :::{tip} Solution
 :icon: false
 :class: dropdown
+
 $$
 \begin{equation*}
 N_5=\dfrac{10000}{1+3e^{-0.3(5)}}= 5990\;\text{fish}
 \end{equation*}
 $$
+
 :::
 
 (iii) Graph $N(t)$, (_doesn't have to be exact, just the general shape, but make sure to label the main parts such as $K$)_.
@@ -166,11 +179,13 @@ It takes about 8.3 years for there to be 8000 fish in the lake.
 ## Steady-state & Equilibrium points
 
 When we study a population model we are most likely interested in **long-term behaviour**. Often, after enough time has passed, the model settles into a pattern. With respect to the previous discussion, the carrying capacity is the population that the model wants to tend towards. If it were to reach this value, then the population would remain the same. One can see this by plugging $N=K$ into our model
+
 $$
 \begin{equation*}
 \frac{dN}{dt}\Big|_{N=K}=rN\left(1-\frac{N}{K}\right)\Big|_{N=K}=rK\left(1-\frac{K}{K}\right)=0.
 \end{equation*}
 $$
+
 When the derivative is zero, there is no change. Since we assume that our change is entirely dependent on the current population size, as soon as the population remains the same for one time period, it will remain the same from that point onwards.
 
 This value $N=K$ is called an **equilibrium point**. For the logistic growth model there are two equilibrium points, $N=0$ and $N=K$. If the population were to reach either of these values then they would never change. Since our differential equations give the derivative of our model, to find equilibrium points we simply set our equation to zero and solve. 
@@ -186,6 +201,7 @@ For the case of the logistic model, there are always $2$ equilibrium points - an
 We have already talked about how populations grows in terms of the logistic model and how the carrying capacity works -- it governs the behaviour of populations with high densities. But we have not yet considered how a small population might affect growth
 
 Our initial assumptions say that the growth rate of a population will decrease at higher densities and increase at lower densities due to competition for limited resources -- food and land for example. But if you had a population consisting of, say, a single tiger, then it does not matter how much food or land that tiger has, the population will die out because it has nothing to breed with. **The Allee effect**, named after Walter Clyde Allee, is the principle that individuals within a population require the presence of other individuals in order to survive and reproduce successfully. Thus when the population size is too small, it will not be able to maintain a positive growth rate. **The logistic equation with Allee effect** has the form
+
 $$
 \begin{equation*}
 \frac{dN}{dt}=rN\left(1-\frac{N}{K}\right)\left(\frac{N}{A}-1\right),
@@ -202,14 +218,16 @@ Write a possible differential equation for a population whose growth is modelled
 :::{tip} Solution
 :icon: false
 :class: dropdown
+
 $$
 \begin{equation*}
 {\frac{dN}{dt}=0.15N\left(1-\frac{N}{800}\right)\left(\frac{N}{100}-1\right)}
 \end{equation*}
 $$
+
 :::
 
-As with the logsitic model, if $N>K$ then $dN/dt<0$ and the population is decreasing. If $A<N<K$, then $dN/dt>0$ and the population is increasing. The new behaviour of this model is when $N<A$, which given that $A<K$ we can see that $dN/dt<0$ and so the population decreases.
+As with the logistic model, if $N>K$ then $dN/dt<0$ and the population is decreasing. If $A<N<K$, then $dN/dt>0$ and the population is increasing. The new behaviour of this model is when $N<A$, which given that $A<K$ we can see that $dN/dt<0$ and so the population decreases.
 
 %Add graph
 
@@ -228,11 +246,13 @@ The point about the DE is that it is more like a metaphor for a class of populat
 :::{tip} Solution
 :icon: false
 :class: dropdown
+
 $$
 \begin{equation*}
 \dfrac{dN}{dt}=0.3N\left(1-\dfrac{N}{10000}\right)\left(\dfrac{N}{1000}-1\right)
 \end{equation*}
 $$
+
 :::
 
 (ii) What are the equilibrium solutions for this new model?
@@ -240,6 +260,7 @@ $$
 :::{tip} Solution
 :icon: false
 :class: dropdown
+
 $$
 \begin{equation*}
 \begin{aligned}
@@ -250,6 +271,7 @@ $$
 \end{aligned}
 \end{equation*}
 $$
+
 For the logistic equation with Allee threshold, the equilibrium points lie at $N=0$ and the carrying capacity $N=K=10000$, and the Allee threshold $N=A=1000$.
 :::
 ---

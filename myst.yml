@@ -16,6 +16,7 @@ project:
 
   toc:
     - file: intro.md
+      title: Forward
     - file: TableOfContents.md
     - file: Intro_MathModeling.md
       title: Introduction to Mathematical Modeling

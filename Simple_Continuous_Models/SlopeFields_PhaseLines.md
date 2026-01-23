@@ -9,6 +9,7 @@ The solutions to such a differential equation are curves in the $(N,t)-$plane th
 #### Example 1
 
 Consider the differential equation 
+
 $$
 \begin{equation*}
 \frac{dN}{dt}=rN
@@ -39,6 +40,7 @@ we combine the information from the table to generate the slope field and the co
 #### Example 2
 
 Sketch a slope field and solution curves for the problem of a cooling object (Newton's Law of cooling), given by the differential equation
+
 $$
 \begin{equation*}
 \dfrac{dT}{dt}=f(T)=0.2(10-T)
@@ -89,10 +91,10 @@ Find the equilibrium points for the following differential equations and determi
 
 1. $\dfrac{dN}{dt} = -0.4N+500$
 
-#Add graphs
+%Add graphs
 2. $\dfrac{dQ}{dt} = 0.4N-500$
 
-#Add graphs
+%Add graphs
 
 :::
 
@@ -108,7 +110,7 @@ Find the equilibrium points for the following differential equations and determi
 :open: true
 Determine the equilibrium points and stability for $\dfrac{dN}{dt}=N^2-4$.
 
-#Add graph
+%Add graph
 
 :::
 
@@ -124,7 +126,7 @@ Determine the equilibrium points and stability for $\dfrac{dN}{dt}=N^2-4$.
 :open: true
 Find the equilibrium points and determine stability for the following differential equations.
 
-1. $\dfrac{dN}{dt} = 0.3N\left(1-\dfrac{N}{200})$
+1. $\dfrac{dN}{dt} = 0.3N\left(1-\dfrac{N}{200}\right)$
 2. $\dfrac{dQ}{dt} = (Q^3-8)(e^Q-1)$
 3. $\dfrac{dN}{dt} = e^{2N}+6e^N+8$
 

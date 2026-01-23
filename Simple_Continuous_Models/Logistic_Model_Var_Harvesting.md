@@ -186,3 +186,18 @@ The upper equilibrium point ($N=8000$) represent the upper/maximum threshold for
     since harvesting 600 fish per year from the lake would be greater than the maximum sustainable yield, no matter the initial fish population, they will eventually die out at this rate; therefore, it is not sustainable.
 :::
 
+:::{tip} Exercise 2
+:class: dropdown
+:open: true
+
+A commercial whaling company hunts whales at a rate of 15 whales per year from a part of an ocean where the whale population grows logistically with instrinsic growth rate of 1% per year and a carrying capacity of $K=5000$.
+
+1. Write the differential equation for the whale population incorporating the hunting of the whales.
+2. Calculate the **maximum sustainable yield** for the whale population.
+3. An environmental organization protested against activities of this whaling company. What concern could they have? What would the whale population look like in time at this hunting rate? (Justify your answer.)
+
+:::{hint}
+_Compare the hunting rate with the maximum sustainable yield._
+:::
+
+:::
