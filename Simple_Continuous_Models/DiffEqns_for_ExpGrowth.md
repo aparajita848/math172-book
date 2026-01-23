@@ -137,6 +137,10 @@ Since $e^{rt}$ is always positive, the constant $C$ determines the sign of the f
 :::
 
 % Add simulation here.
+```{code-cell} python
+:tags: [remove-input]
+
+```
 ---
 
 ## Solutions to a Differential Equation

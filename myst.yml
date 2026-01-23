@@ -16,9 +16,10 @@ project:
 
   toc:
     - file: intro.md
+    - file: TableOfContents.md
     - file: Intro_MathModeling.md
-      title: 0. Introduction to Mathematical Modeling
-    - title: I. Simple Continuous Models
+      title: Introduction to Mathematical Modeling
+    - title: Simple Continuous Models
       children:
         - file: Simple_Continuous_Models/DiffEqns_for_ExpGrowth.md
         - file: Simple_Continuous_Models/Malthusian_Model.md 
@@ -28,22 +29,24 @@ project:
           children:
             - file: Simple_Continuous_Models/Logistic_Model_Var_Harvesting.md 
         - file: Simple_Continuous_Models/BiochemicalKinetics.md
-    - title: II. Discrete Models
+    - title: Discrete Models
       children:
         - file: Discrete_Models/Simple_Discrete_Models.md
         - file: Discrete_Models/Cobwebbing.md 
         - file: Discrete_Models/Matrices.md 
         - file: Discrete_Models/Structured_Populations.md
         - file: Discrete_Models/Eigenvectors_Eigenvalues.md
-    - title: III. Multiple Species Continuous Models
+    - title: Multiple Species Continuous Models
       children:
         - file: Multiple_Species_Continuous_Models/Predator_Prey.md
         - file: Multiple_Species_Continuous_Models/SIR_Model.md  
-    - title: IV. Genetic Inheritance
+    - title: Genetic Inheritance
       children:
         - file: Genetic_Inheritance/Probability.md
         - file: Genetic_Inheritance/Mendel_Punnett_Squares.md
         - file: Genetic_Inheritance/DNA_Sequences.md 
+    - file: ReactionDiffusion.md
+      hidden: true
     - file: Appendix.md
 
   exports:
