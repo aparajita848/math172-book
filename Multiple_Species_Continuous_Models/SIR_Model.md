@@ -29,7 +29,9 @@ However, that we have already **assumed that** the disease we are discussing is 
 In this **$SIR$ model**, individuals of the population progress through the three classes in order: susceptibles remain disease-free or become infected; infected individuals pass through an infectious period until they recover from the disease; and a recovered individual is never at risk again (having developed permanent immunity against the disease). Schematically, we can think of the model as:
 
 $$
+\begin{equation*}
 \boxed{Susceptibles}\Longrightarrow\boxed{Infected}\Longrightarrow\boxed{Recovered}
+\end{equation*}
 $$
 
 Disease spreads when a susceptible individual comes in contact with an infected individual and subsequently becomes infected. Therefore, the number of susceptibles decreases as susceptibles become ill. Then, the differential equation modeling the suscpetible population can be given by:
@@ -70,19 +72,19 @@ $$
 \dfrac{dI}{dt}= \alpha SI-\beta I\\ \\
 \dfrac{dR}{dt}= \beta I
 \end{cases}
-\hspace*{1cm}\begin{cases}
-\dfrac{dS}{dt}=-aSI+rR\\ \\
-\dfrac{dI}{dt}=aSI-bI\\ \\
-\dfrac{dR}{dt}=bI-rR
-\end{cases}\hspace*{1cm}\begin{cases}
-\dfrac{dS}{dt}=cN-aSI-cS\\\\
-\dfrac{dI}{dt}=aSI-bI-cI\\\\
-\dfrac{dR}{dt}=bI-cR
-\end{cases}\hspace*{1cm}\begin{cases}
-\dfrac{dS}{dt}=(c-v)N-aSI-cS\\ \\
-\dfrac{dI}{dt}=aSI-bI-cI\\ \\
-\dfrac{dR}{dt}=bI-cR+vN
-\end{cases}
+%\hspace*{1cm}\begin{cases}
+%\dfrac{dS}{dt}=-aSI+rR\\ \\
+%\dfrac{dI}{dt}=aSI-bI\\ \\
+%\dfrac{dR}{dt}=bI-rR
+%\end{cases}\hspace*{1cm}\begin{cases}
+%\dfrac{dS}{dt}=cN-aSI-cS\\\\
+%\dfrac{dI}{dt}=aSI-bI-cI\\\\
+%\dfrac{dR}{dt}=bI-cR
+%\end{cases}\hspace*{1cm}\begin{cases}
+%\dfrac{dS}{dt}=(c-v)N-aSI-cS\\ \\
+%\dfrac{dI}{dt}=aSI-bI-cI\\ \\
+%\dfrac{dR}{dt}=bI-cR+vN
+%\end{cases}
 \end{aligned}
 \end{equation*}
 $$

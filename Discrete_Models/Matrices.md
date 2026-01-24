@@ -59,7 +59,7 @@ $$
 
 The first two operations work exactly how you might expect:
 
-## Matrix Addition
+### Matrix Addition
 
 $$
 \begin{equation*}
@@ -74,7 +74,7 @@ $$
 
 Add corresponding entries
 
-## Scalar Multiplication
+### Scalar Multiplication
 
 $$
 \begin{equation*}
@@ -89,7 +89,7 @@ $$
 
 Multiply each entry by the scalar.
 
-## Matrix Multiplication
+### Matrix Multiplication
 
 Multiplication on the other hand is quite different. Though not hard once you get the hang of it, at first it may seem complicated.
 
@@ -154,12 +154,12 @@ $$
 :::{tip}
 
 All of these calculations can be done on your calculator, which many of you will prefer. The following instructions are based on a TI-83 calculator.
- - Click ``2nd'' followed by ``MATRIX''. There should now be a list of letters [A], [B], etc..
- - Select the ``EDIT'' option followed by the matrix you wish to edit.
+ - Click "2nd" followed by "MATRIX". There should now be a list of letters [A], [B], etc..
+ - Select the "EDIT" option followed by the matrix you wish to edit.
  - Set the size of the matrix. Remember the first number corresponds to the number of rows and the second is the number of columns.
  - Input each entry of the matrix. The default value for each one is zero.
- - Once you have done assigning all the matrices you need you can ``QUIT'' the ``MATRIX'' menu.
- - On the regular calculator screen you can call the matrices you have assigned by pressing ``2nd`` followed by ``MATRIX'' and then selecting the matrix you wish to call.
+ - Once you have done assigning all the matrices you need you can "QUIT" the "MATRIX" menu.
+ - On the regular calculator screen you can call the matrices you have assigned by pressing "2nd" followed by "MATRIX" and then selecting the matrix you wish to call.
  - Note: If you want to assign a vector then you can just assign an $m\times1$ matrix.
 
 :::

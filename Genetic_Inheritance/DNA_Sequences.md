@@ -31,6 +31,34 @@ Finally, the DNA molecule has a directional sense so that we can make a distinct
 
 Suppose a $40$-base ancestral DNA sequence ($S_0$) is given by the top row in the table below and its descendent aligned sequence ($S_1$) is given by the bottom row. Markers have been placed after every string of length $5$ to help reading easier, this is by no means a standard way of studying DNA sequences.
 
+-----------------------------------------------
+-----------------------------------------------
+ACTTG|TCGGA|TGATC|AGCGG|TCCAT|GCACC|TGACA|ACGGT
+ACATG|TTGCT|TGACG|ACAGG|TCCAT|GCGCC|TGAGA|ACGGC 
+-----------------------------------------------
+-----------------------------------------------
+
+Thinking of each site as a trial of the same probabilistic process, we can estimate $16$ conditional probabilities describing the likelihood of observing different types of base substitutions when comparing the sequences of ancestor and descendent:
+
+$$
+\begin{equation*}
+\begin{aligned}
+P\left(S_1=i\mid S_0=j\right),
+\end{aligned}
+\end{equation*}
+$$
+
+where $i,j=A,G,C,T$.
+One way to do this is to arrange the data into a table:
+
+ |A|G|C|T
+---|---|---|---|---
+A|7|0|1|1
+G|1|9|2|0
+C|0|2|7|2
+T|1|0|1|6
+----------
+ |9|11|11|9
 
 ---
 
