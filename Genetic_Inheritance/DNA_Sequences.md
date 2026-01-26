@@ -27,7 +27,7 @@ $$
 
 Finally, the DNA molecule has a directional sense so that we can make a distinction between a sequence like $ATCGAT$ and the inverted sequence $TAGCTA$. The upshot of all this structure is that we will be able to think of $DNA$ sequences mathematically simply as sequences composed of the four letters $A$, $T$, $C$ and $G$.
 
-## Example
+### Example
 
 Suppose a $40$-base ancestral DNA sequence ($S_0$) is given by the top row in the table below and its descendent aligned sequence ($S_1$) is given by the bottom row. Markers have been placed after every string of length $5$ to help reading easier, this is by no means a standard way of studying DNA sequences.
 
@@ -95,7 +95,7 @@ $$
 \mathbf{p}_0=\begin{bmatrix}
 P_{A_0}\\ P_{G_0}\\ P_{C_0}\\ P_{T_0}
 \end{bmatrix}
-{\colour=\frac{1}{\text{length of }S_0}\begin{bmatrix}
+=\frac{1}{\text{length of }S_0}\begin{bmatrix}
 \#\text{ of }A\text{'s in }S_0\\
 \#\text{ of }G\text{'s in }S_0\\
 \#\text{ of }C\text{'s in }S_0\\
@@ -111,9 +111,15 @@ $$
 \begin{equation*}
 \begin{aligned}
 P\left(S_1=i\mid S_0=j\right),
-\end{align*}
+\end{aligned}
+\end{equation*}
+$$
+
 for $i,j=A,G,C,T$ in a $4\times4$ matrix as follows:
-\begin{align*}
+
+$$
+\begin{equation*}
+\begin{aligned}
 M=\begin{bmatrix}
 P_{A_1\mid A_0}	&	P_{A_1\mid G_0}	&	P_{A_1\mid C_0}	&	P_{A_1\mid T_0}	\\
 P_{G_1\mid A_0}	&	P_{G_1\mid G_0}	&	P_{G_1\mid C_0}	&	P_{G_1\mid T_0}	\\
@@ -211,7 +217,7 @@ $$
 9	\\ 11	\\ 11	\\ 9
 \end{bmatrix}=\begin{bmatrix}
 0.225	\\ 0.275	\\ 0.275	\\ 0.225
-\end{bmatrix},}\hspace*{1cm}M=\begin{bmatrix}
+\end{bmatrix},\hspace*{1cm}M=\begin{bmatrix}
 0.778	& 0		& 0.091	& 0.111	\\
 0.111	& 0.818	& 0.182	& 0		\\
 0		& 0.182	& 0.636	& 0.222	\\
@@ -263,7 +269,7 @@ Of course, this is expected. We explicitly constructed the matrix $M$ so that it
 Having calculated the matrix $M$, we can answer this question quite quickly.
 
 
-## Example 
+### Example 
 
 We continue with our example. We have
 
@@ -362,26 +368,27 @@ Suppose a $40$-base ancestral DNA sequence ($S_0$) is given by the top row in th
 $$
 \begin{equation*}
 \begin{aligned}
-\mathbf{p}_0={\colour\frac{1}{40}\begin{bmatrix}
+\mathbf{p}_0=\frac{1}{40}\begin{bmatrix}
 8	\\	7	\\	11	\\	14
 \end{bmatrix}=\begin{bmatrix}
 0.200	\\	0.175	\\	0.275	\\	0.350
-\end{bmatrix}}\hspace*{1cm}M={\colour\begin{bmatrix}
+\end{bmatrix}\hspace*{1cm}M=\begin{bmatrix}
 \frac{6}{8}	&	\frac{1}{7}	&	\frac{0}{11}	&	\frac{3}{14}	\\\\
 \frac{0}{8}	&	\frac{6}{7}	&	\frac{1}{11}	&	\frac{0}{14}	\\\\
 \frac{1}{8}	&	\frac{0}{7}	&	\frac{8}{11}	&	\frac{1}{14}	\\\\
 \frac{1}{8}	&	\frac{0}{7}	&	\frac{2}{11}	&	\frac{10}{14}
-\end{bmatrix}=\begin{bmatrix}
+\end{bmatrix}
+=\begin{bmatrix}
 0.750	&	0.143	&	0		&	0.214	\\
 0		&	0.857	&	0.091	&	0		\\
 0.125	&	0		&	0.727	&	0.071	\\
 0.125	&	0		&	0.182	&	0.714
-\end{bmatrix}}\\
+\end{bmatrix}
 \end{aligned}
 \end{equation*}
 $$
 
-\item The proportion of sites that will have a base $T$ that mutates into a base $A$ after $1$ time step is
+- The proportion of sites that will have a base $T$ that mutates into a base $A$ after $1$ time step is
 
 $$
 \begin{equation*}
@@ -423,7 +430,7 @@ $$
 $$
 \begin{equation*}
 \begin{aligned}
-\boxed{0.292}}
+\boxed{0.292}
 \end{aligned}
 \end{equation*}
 $$
