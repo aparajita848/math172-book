@@ -40,7 +40,11 @@ project:
     - title: Multiple Species Continuous Models
       children:
         - file: Multiple_Species_Continuous_Models/Predator_Prey.md
-        - file: Multiple_Species_Continuous_Models/SIR_Model.md  
+        - file: Multiple_Species_Continuous_Models/SIR_Model.md 
+        - title: Variations to the SIR Model
+          children:
+            - file: Multiple_Species_Continuous_Models/SI_Model.md  
+            - file: Multiple_Species_Continuous_Models/SIS_Model.md  
     - title: Genetic Inheritance
       children:
         - file: Genetic_Inheritance/Probability.md
