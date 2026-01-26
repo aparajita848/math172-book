@@ -91,7 +91,7 @@ $$
 \#\text{ of }G\text{'s in }S_0\\
 \#\text{ of }C\text{'s in }S_0\\
 \#\text{ of }T\text{'s in }S_0\\
-\end{bmatrix}}
+\end{bmatrix}
 \mathbf{p}_0=\begin{bmatrix}
 P_{A_0}\\ P_{G_0}\\ P_{C_0}\\ P_{T_0}
 \end{bmatrix}
