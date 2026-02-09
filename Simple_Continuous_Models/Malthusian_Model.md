@@ -127,6 +127,7 @@ $$
 \begin{equation*}
 2N_0=N_0e^{rt_D}.
 \end{equation*}
+$$
 
 Solving for $t_D$ is simple now and we obtain the **doubling-time**:
 
@@ -165,6 +166,7 @@ t_H = \frac{\ln(1/2)}{r}=& \dfrac{- \ln(2)}{r},\quad r<0.
 $$
 
 _Material adopted from {cite}`Edelstein-Keshet_2020` (edited for the purpose of this course)._
+
 ---
 
 ## Exercises
