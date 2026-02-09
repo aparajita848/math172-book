@@ -588,7 +588,7 @@ Imagine rolling a die and flipping a coin. Then the event that `the roll is even
 - Two events are **mutually exclusive** if it is impossible for them to occur simultaneously.
 
 $$
-\begin{equation*]
+\begin{equation*}
 \begin{aligned}
 P(E\cap F)=0.
 \end{aligned}
@@ -597,11 +597,11 @@ $$
 
 ### Example 
 
-Consider the \textbf{sum of rolling two dice} and the following three events:
+Consider the **sum of rolling two dice** and the following three events:
 
 <center>
 
-$E=$ `the sum is 7 or less', $F=$ `the sum is 5 or more', $G=$ `the sum is exactly 10'.
+$E=$ 'the sum is 7 or less', $F=$ 'the sum is 5 or more', $G=$ 'the sum is exactly 10'.
 
 </center>
 
@@ -676,7 +676,8 @@ Medical tests for diseases are sometimes characterised by their **sensitivity** 
 $$
 \begin{equation*}
 \begin{aligned}
-\text{Sensitivity}={\colour P\left(\text{positive}\mid\text{diseased}\right)},\hspace*{1cm}\text{Specificity}={\colour P\left(\text{negative}\mid\text{healthy}\right)}
+\text{Sensitivity}=&P\left(\text{positive}\mid\text{diseased}\right)}\\
+\text{Specificity}=&P\left(\text{negative}\mid\text{healthy}\right)
 \end{aligned}
 \end{equation*}
 $$
@@ -685,8 +686,6 @@ A study investigated the use of X-ray readings to diagnose tuberculosis. Diagnos
 
 ```{table} Table showing the study results of x-ray readings for patients with tuberculosis and the control group.
 
-:label: xray-TB-table
-:align: center
 
 | | Persons without TB | Persons with TB |
 | --- | --- | --- |
@@ -694,7 +693,7 @@ A study investigated the use of X-ray readings to diagnose tuberculosis. Diagnos
 | Positive X-ray | 51 | 22 |
 ```
 
-:::{tip} Solution to Exercise 1
+:::{tip} Solution
 :icon: false
 :class: dropdown
 
