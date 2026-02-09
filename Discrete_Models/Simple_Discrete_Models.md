@@ -214,7 +214,6 @@ $$
 :icon: false
 :class: dropdown
 
-\begin{enumerate}
 - For a discrete model, with a **constant** $\Delta N=c$ (the discrete difference is some constant $C$), then the recursive equation is given by
 
 $$

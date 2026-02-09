@@ -164,7 +164,7 @@ t_H = \frac{\ln(1/2)}{r}=& \dfrac{- \ln(2)}{r},\quad r<0.
 \end{equation*}
 $$
 
-
+_Material adopted from {cite}`Edelstein-Keshet_2020` (edited for the purpose of this course)._
 ---
 
 ## Exercises

@@ -206,6 +206,8 @@ $$
 
 :::
 
+_Material adopted from {cite}`Edelstein-Keshet_2020` (edited for the purpose of this course)._
+
 ---
 
 ## Exercises
