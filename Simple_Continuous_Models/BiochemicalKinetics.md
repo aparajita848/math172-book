@@ -148,8 +148,8 @@ $$
 $$
 \begin{equation*}
 \begin{cases}
-\frac{dA}{dt} = -k_1A+k_{-1}B=0\\ 
-\frac{dB}{dt} = k_1A-k_{-1}B=0
+\dfrac{dA}{dt} = -k_1A+k_{-1}B=0\\ 
+\dfrac{dB}{dt} = k_1A-k_{-1}B=0
 \end{cases}
 \implies k_1A=k_{-1}B
 \end{equation*}

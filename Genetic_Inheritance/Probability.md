@@ -14,7 +14,7 @@ S=\{1,2,3,4,5,6\}.
 \end{equation*}
 $$
 
-- **Elementary events** - the outcomes in the sample space. For example, `rolling a $6$' or `first die rolling a $2$, second rolling a $5$' are elementary events. More complex events would be, `the sum of two die rolls is a $8$'. Such events occur if a number of different elementary events occur.
+- **Elementary events** - the outcomes in the sample space. For example, 'rolling a $6$' or `first die rolling a $2$, second rolling a $5$' are elementary events. More complex events would be, `the sum of two die rolls is a $8$'. Such events occur if a number of different elementary events occur.
 
 ## Exercise 
 List the sample space of the following probability experiments.
@@ -676,7 +676,7 @@ Medical tests for diseases are sometimes characterised by their **sensitivity** 
 $$
 \begin{equation*}
 \begin{aligned}
-\text{Sensitivity}=&P\left(\text{positive}\mid\text{diseased}\right)}\\
+\text{Sensitivity}=&P\left(\text{positive}\mid\text{diseased}\right)\\
 \text{Specificity}=&P\left(\text{negative}\mid\text{healthy}\right)
 \end{aligned}
 \end{equation*}

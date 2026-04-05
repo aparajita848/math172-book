@@ -198,7 +198,7 @@ For the case of the logistic model, there are always $2$ equilibrium points - an
 
 ## Allee Effect
 
-We have already talked about how populations grows in terms of the logistic model and how the carrying capacity works -- it governs the behaviour of populations with high densities. But we have not yet considered how a small population might affect growth
+We have already talked about how populations grow in terms of the logistic model and how the carrying capacity works -- it governs the behaviour of populations with high densities. But we have not yet considered how a small population might affect growth
 
 Our initial assumptions say that the growth rate of a population will decrease at higher densities and increase at lower densities due to competition for limited resources -- food and land for example. But if you had a population consisting of, say, a single tiger, then it does not matter how much food or land that tiger has, the population will die out because it has nothing to breed with. **The Allee effect**, named after Walter Clyde Allee, is the principle that individuals within a population require the presence of other individuals in order to survive and reproduce successfully. Thus when the population size is too small, it will not be able to maintain a positive growth rate. **The logistic equation with Allee effect** has the form
 
@@ -208,12 +208,12 @@ $$
 \end{equation*}
 $$
 
-where, as before, $r$ is the intrinsic growth rate, $K$ is the carrying capacity and the new variable, $A$, is the minimal size of the population required to survive -- called the $$Allee threshold$$.
+where, as before, $r$ is the intrinsic growth rate, $K$ is the carrying capacity and the new variable, $A$, is the minimal size of the population required to survive -- called the **_Allee threshold_**.
 
-We will assume that $A<K$, since we want $A$ to represent the **minimum** size the population needs and $K$ should be the **maximum** size it can sustain. We will see that the long term outcome of a population modelled by this equation depends on whether the initial value is above or below the value of $A$.
+We will assume that $A<K$, since we want $A$ to represent the **minimum** size the population needs and $K$ should be the **maximum** size it can sustain. We will see that the long term outcome of a population modeled by this equation depends on whether the initial value is above or below the value of $A$.
 
 ### Example 2
-Write a possible differential equation for a population whose growth is modelled by a logistic equation with Allee effect if the intrinsic growth rate is $15\%$ the carrying capacity is $800$ individuals and at least $100$ individuals are required in order for the population to survive.
+Write a possible differential equation for a population whose growth is modeled by a logistic equation with Allee effect if the intrinsic growth rate is $15\%$ the carrying capacity is $800$ individuals and at least $100$ individuals are required in order for the population to survive.
 
 :::{tip} Solution
 :icon: false
