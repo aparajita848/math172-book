@@ -1,6 +1,6 @@
 # Logistic with Harvesting
 
-```{image} images/overfishing.jpg
+```{image} ../images/overfishing.jpg
 :alt: Fishing.
 :width: 500px
 :align: center
