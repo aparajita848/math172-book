@@ -102,16 +102,19 @@ $$
 
 This variation of the logistic model results by **harvesting** at a non-constant rate _**proportional to the present population size $N$**_. _The effect is to decrease the instantaneous growth rate $r$ by the constant amount $h$ in the standard logistic model._
 
-:::{figure}
-:label: sustainable vs. unsustainable fishing
+
+```{image} ../images/varH_sus.png
+:alt: Sustainable Fishing.
+:width: 500px
 :align: center
+```
 
-![Sustainable Fishing] (../images/varH_sus.png)
-![Unsustainable Fishing] (../images/varH_unsus.png)
 
-Sustainable vs. Unsustainable fishing
-
-:::
+```{image} ../images/varH_unsus.png
+:alt: Unsustainable Fishing.
+:width: 500px
+:align: center
+```
 
 In this scenario, to maintain a sustainable practice of harvesting, the harvesting rate should be less than the intrinsic growth rate, $h<r$. 
 
