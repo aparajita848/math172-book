@@ -6,6 +6,11 @@ project:
   keywords: 
     - math-models
     - biological context
+
+kernelspec:
+    name: python3
+    display_name: 'Python 3'
+
   #authors: 
   #  - name: Aparajita Budithi
   #    affiliations:

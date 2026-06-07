@@ -12,7 +12,7 @@ Consider the differential equation
 
 $$
 \begin{equation*}
-\frac{dN}{dt}=rN
+\frac{dN}{dt}=2N
 \end{equation*}
 $$
 
@@ -34,6 +34,27 @@ positive values of $N$, the slope is positive; for negative values of $N$, the s
 | 2 | 4 | positive | increasing | $\nearrow$ |
 
 we combine the information from the table to generate the slope field and the corresponding solution curves. _Note that direction of the arrows (rather than their absolute magnitude) provides the most important qualitative tendency for the slope field sketch._
+
+
+:::{code-cell} <python3>
+:key: value
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.arange(0, 5, 0.5)
+y = np.arange(-2, 2, 0.5)
+X, Y = np.meshgrid(x, y)
+
+U = np.ones(X.shape)
+V = 2*Y
+
+fig, ax = plt.subplots()
+q = ax.quiver(X, Y, U, V)
+ax.quiverkey(q, X=0.3, Y=1.1, U=10,
+             label='Quiver key, length = 10', labelpos='E')
+
+plt.show()
+:::
 
 :::
 
