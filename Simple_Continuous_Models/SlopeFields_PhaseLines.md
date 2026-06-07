@@ -1,3 +1,9 @@
+---
+kernelspec:
+  name: python3
+  display_name: 'Python 3'
+---
+
 # Equilibria & Stability for Differential Equations
 
 ## Slope-Fields
