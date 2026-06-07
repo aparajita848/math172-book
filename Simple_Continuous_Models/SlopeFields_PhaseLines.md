@@ -42,7 +42,7 @@ positive values of $N$, the slope is positive; for negative values of $N$, the s
 we combine the information from the table to generate the slope field and the corresponding solution curves. _Note that direction of the arrows (rather than their absolute magnitude) provides the most important qualitative tendency for the slope field sketch._
 
 
-```{code-cell} python3
+```{code-cell} python
 :key: value
 #:tags: [remove-input]
 import matplotlib.pyplot as plt
