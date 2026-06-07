@@ -6,6 +6,8 @@ project:
   keywords: 
     - math-models
     - biological context
+  
+  jupyter: true
 
   #authors: 
   #  - name: Aparajita Budithi
