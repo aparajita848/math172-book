@@ -44,7 +44,7 @@ we combine the information from the table to generate the slope field and the co
 
 ```{code-cell} python3
 :key: value
-%:tags: [remove-input]
+#:tags: [remove-input]
 import matplotlib.pyplot as plt
 import numpy as np
 
