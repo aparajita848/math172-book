@@ -159,6 +159,47 @@ where $r, q, \alpha$ and $\beta$ are all positive constants, along with the **mo
 
 - The predator can persist only if the prey population is present (in the absence of prey, the predator population will starve to extinction).
 
+---
+### Example
+
+Suppose we have an ecosystem of rabbits $(P)$ and foxes $(Q)$ with the following assumptions:
+- In the absence of foxes, rabbits grow exponentially with intrinsic growth rate $r=0.84$.
+- The decrease in rabbits due to predation is proportional to the number of predators, with coefficient $\alpha=0.04$.
+- The rabbits are the sole food source for the foxes, without them the population decreases exponentially with rate $q=0.88$.
+- Predation causes an increase in the foxes population proportional to the number of rabbits $(P)$ with coefficient $\beta=0.02$.
+
+1. Write down the differential equation that models the growth of the rabbits in this situation.
+
+:::{tip} Solution
+:icon: false
+:class: dropdown
+
+$$
+\begin{equation*}
+\dfrac{dP}{dt}=0.84P-0.04QP
+\end{equation*}
+$$
+
+:::
+
+2. Write down the differential equation that models the growth of the foxes in this situation.
+
+:::{tip} Solution
+:icon: false
+:class: dropdown
+
+$$
+\begin{equation*}
+\dfrac{dQ}{dt}=-0.88Q+0.02QP
+\end{equation*}
+$$
+
+:::
+
+3. Use the simulation below to observe how the populations behave in time; (you may begin with a hundred rabbits and 15 foxes initially):
+
+---
+
 ## Equilibria & Stability
 
 Recall that our previous encounters with determining equilibria involved us finding roots of the derivative in our model. For the predator-prey model this is still the same, the only difference is that now we require that **both derivatives need to be zero** at the same time. That is: The equilibrium points of the predator-prey model occur when
@@ -208,6 +249,152 @@ $$
 Thus, the predator population is controlled by a fixed number of prey ($P=\dfrac{q}{\beta}$). The greater the death rate of the predators ($q$), the more prey needed to keep the predator population from declining. Conversely, the greater the conversion efficiency of predators ($\beta$), the fewer prey needed to maintain the predators at equilibrium.
 
 ### Graphical Solutions to the Predator-Prey Model
+
+The graphs below represent plots of the solutions in $(1)$, on the left, and $(2)$, on the right.
+
+
+The coloured lines indicate when the given derivative is zero. We can then choose a point on the plane and from its position relative to these lines we can determine in which direction the population is moving.
+
+For example, for the $P$-nullclines, if we choose a point that lies inside the triangle, then we have $Q<\dfrac{r}{\alpha}$, so then $\dfrac{dP}{dt}>0$ and so the population of $P$ is increasing. Above the line, $\dfrac{dP}{dt}<0$ and so the population decreases. For the $Q$-nullclines, if we choose a point to the left of the line $P=\dfrac{q}{\beta}$, then $P<\dfrac{q}{\beta}$ and so $\dfrac{dQ}{dt}<0$ and the population of $Q$ decreases. To the right, $\dfrac{dQ}{dt}>0$ and so the population of $Q$ increases. We indicate these below:
+
+
+
+Overlaying one plot on top of the other, we obtain the following:
+
+
+In the upper right-hand corner region, both predator and prey are abundant. Because we are above the $Q-$nullcline, prey are abundant enough for the predator to increase. However, we are to the right of the vertical prey-nullcline, consequently, there are too many predators, and the prey population declines. 
+
+
+The predator and prey nullclines divide the graph into plane into four regions. The equilibrium points are therefore the points of intersection of the $P$-nullclines with the $Q$-nullclines, depicted above there appears to be $2$. As with single species, we can determine the stability of each of the equilibrium points by looking at the direction of the arrows with respect to the points. Taking a point anywhere on the quadrant we move in the direction the arrows tell us. The vector of net movement points can be used to trace the approximate shape around the equilibrium point.The result, in the cases of a stable equilibrium, is an approximate ellipse cycling counterclockwise.
+
+For example, in the diagram below, we start with a point in the `lower left quadrant'. The arrows above tell us that we should move down and to the right. Once we cross into the `lower right quadrant', the direction to move in changes to up and to the right. Continuing this manner we see that the result is a spiral path, similar to the one below.
+
+How does the ellipse translate into growth curves for the predator and prey populations? Both populations cycle periodically, increasing and decreasing smoothly from minimum to maximum. The ellipse indicates that the peak of the predator population occurs when the prey population is at its mid-point and vice-versa.
+
+---
+
+### Example 2
+
+---
+
+## Variations of the Simplistic Predator-Prey Model
+
+Assume we have a closed ecosystem, so that there is no migration in or out of the system. Suppose that there are only two types of animals: the predator and the prey. Here the interdependence arises because one species serves as a food source for the other species.
+
+The general form of our **Predator-Prey Model** looks like:
+
+$$
+\begin{equation*}
+\begin{aligned}
+\dfrac{dP}{dt}=&F_1(P)-G_1(P,Q)	\\\\
+\dfrac{dQ}{dt}=&F_2(Q)+G_2(P,Q)
+\end{aligned}
+\end{equation*}
+$$
+
+where the functions $F_1$ and $F_2$ represent the the population growth of $P$ and $Q$, respectively, if there were no interactions between the two species. The functions $G_1$ and $G_2$ represent the affect of predation on the the two species.
+
+For the discussion here we will look at a model where the prey population grows logistically with the absence of a predator and the prey is the sole food source for the predators. You will find examples in the homework problems of other possible predator-prey models where what we talk about here can be applied, with the obvious adjustments coming from algebraic manipulations.
+
+We begin by obtaining the equation for the prey population, denoted by $P$. We assume that in the absence of predators the population follows a logistic growth model:
+
+$$
+\begin{equation*}
+\frac{dP}{dt}=rP\left(1-\frac{P}{K}\right).
+\end{equation*}
+$$
+
+Now if we assume that the decrease on the number of preys is proportional to the number of predators, denoted by $Q$, we obtain:
+
+$$
+\begin{equation*}
+\frac{dP}{dt}=rP\left(1-\frac{P}{K}\right)-sQP,
+\end{equation*}
+$$
+
+where $s$ is a positive constant. For the predator, we assume that its sole food source is the prey, so without it the population decreases exponentially. The population increase due to predation will again be assumed to be proportional to the population of prey. This yields:
+
+$$
+\begin{equation*}
+\frac{dQ}{dt}=-uQ+vQP
+\end{equation*}
+$$
+
+where $u$ and $v$ are positive constants.
+
+To clarify, the predator-prey model we have formulated here is
+
+$$
+\begin{equation*}
+\begin{aligned}
+\dfrac{dP}{dt}=&rP\left(1-\dfrac{P}{K}\right)-sQP \\\\
+\dfrac{dQ}{dt}=&-uQ+vQP
+\end{aligned}
+\end{equation*}
+$$
+
+where $r, K, s, u,$ and $v$ are all positive constants, where $u<1$.
+
+### Equilibria and Stability
+
+Recall that our previous encounters with determining equilibria involved us finding roots of the derivative in our model. For the predator-prey model this is still the same, the only difference is that now we require that **both derivatives need to be zero** at the same time. That is: The equilibrium points of the predator-prey model occur when
+
+$$
+\begin{equation*}
+\frac{dP}{dt}=\frac{dQ}{dt}=0.\\
+\end{equation*}
+$$
+
+Solving one derivative equal to zero is straightforward. Solving two simultaneously can be tricky. To facilitate this, here we introduce **nullclines**, which are lines where one of the derivatives is equal to zero.
+
+The nullclines for $dP/dt=0$ are found as:
+
+$$
+\begin{equation*}
+\frac{dP}{dt}=rP\left(1-\frac{P}{K}\right)-sQP=P\left[r\left(1-\frac{P}{K}\right)-sQ\right]=0,
+\end{equation*}
+$$
+
+so the two solutions are
+
+$$
+\begin{equation*}
+P=0\hspace*{0.5cm}\text{or}\hspace*{0.5cm}Q=\frac{r}{s}\left(1-\frac{P}{K}\right).
+\end{equation*}
+$$
+
+The nullclines for $dQ/dt=0$ are found as:
+
+$$
+\begin{equation*}
+\frac{dQ}{dt}=-uQ+vQP=Q\left[-u+vP\right]=0,
+\end{equation*}
+$$
+
+so the two solutions are
+
+$$
+\begin{equation*}
+Q=0\hspace*{0.5cm}\text{or}\hspace*{0.5cm}P=\frac{u}{v}.
+\end{equation*}
+$$
+
+The graphs below represent plots of the solutions in $(1)$, on the left, and $(2)$, on the right.
+
+
+
+
+The coloured lines indicate when the given derivative is zero. We can then choose a point on the plane and from its position relative to these lines we can determine in which direction the population is moving.
+
+For example, for the $P$-nullclines, if we choose a point that lies inside the triangle, then we have $Q<r\left(1-P/K\right)/s$, so then $dP/dt>0$ and so the population of $P$ is increasing. Above the line $dP/dt<0$ and so the population decreases. For the $Q$-nullclines, if we choose a point to the left of the line $P=u/v$, then $P<u/v$ and so $dQ/dt<0$ and the population of $Q$ decreases. To the right, $dQ/dt>0$ and so the population of $Q$ increases. We indicate these below:
+
+Overlaying one plot on top of the other, we obtain the following:
+
+The equilibrium points are therefore the points of intersection of the $P$-nullclines with the $Q$-nullclines, depicted above there appears to be $3$. As with single species, we can determine the stability of each of the equilibrium points by looking at the direction of the arrows with respect to the points. Taking a point anywhere on the quadrant we move in the direction the arrows tell us. The result, in the cases of a stable equilibrium, is a path that spirals into a stable equilibrium point. For example, in the diagram below, we start with a point in the `lower left quadrant'. The arrows above tell us that we should move down and to the right. Once we cross into the `lower right quadrant', the direction to move in changes to up and to the right. Continuing this manner we see that the result is a spiral path, similar to the one below. 
+
+### Stability with Jacobian
+
+Another way to study the stability is to use the **Jacobian matrix** corresponding to the model, which we introduce now.
 
 
 ---
