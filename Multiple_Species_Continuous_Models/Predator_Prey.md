@@ -27,7 +27,7 @@ where $r$ represents the _intrinsic growth rate_. This potential for increase of
 
 $$
 \begin{equation*}
-\dfrac{dP}{dt}={\colour rP-\alpha PQ}
+\dfrac{dP}{dt}= rP-\alpha PQ
 \end{equation*}
 $$
 
@@ -89,7 +89,7 @@ The predator we are modelling is an extreme specialist. It will feed only on the
 
 $$
 \begin{equation*}
-\dfrac{dQ}{dt}=-qQ}
+\dfrac{dQ}{dt}=-qQ
 \end{equation*}
 $$
 
