@@ -27,6 +27,22 @@ The text only aims to serve as a guide; the final decision is of course left to 
 
 ### Navigating Content - Simulations, Labs & Exercises  
 
+%something like this:
+```{comment}
+Requirements
+The notebook used for this tutorial is available on github, together with a link to a live version on binder.
+
+To run the notebook locally, the very first requirement is a working Jupyter environment. Setting up an installation lies outside the scope of the tutorial, but can be found in the official docs. Note that for this tutorial, all libraries were installed using pip, or the pacman package manager. Anaconda currently has a matplotlib issue that gives some problems (at least on Windows 10). Therefore, if you have problems displaying plots correctly, try using pip only, or Linux. The examples were tested on Windows 10 and Arch Linux.
+
+The versions of packages explicitly used to create the examples are:
+
+Python 3.8.1
+matplotlib 3.1.3
+NumPy 1.18.1
+ipywidgets 7.5.1
+ipympl 0.4.1
+To get started, we set the ipympl backend, which makes matplotlib plots interactive. We do this using a magic command, starting with %. We also import some libraries: matplotlib for plotting, NumPy to generate data, and ipywidgets for obvious reasons.
+```
 
 ### Acknowledgements
 
