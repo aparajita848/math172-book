@@ -40,7 +40,6 @@ project:
         - file: Discrete_Models/Cobwebbing.md 
         - file: Discrete_Models/Matrices.md 
         - file: Discrete_Models/Structured_Populations.md
-          title: Structured Populations
           children:
             - file: Discrete_Models/Fibonacci_Rabbits.md
               title: Lab - Fibonacci Rabbits
