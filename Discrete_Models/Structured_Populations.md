@@ -33,7 +33,7 @@ flowchart LR
   C(($$A_t$$)) -->|73| A
 ```
 
-```{image} ../images/structured_populations_fig1.pdf
+```{image} ../images/structured_populations_fig1.png
 :alt: Insect_cycle.
 :width: 500px
 :align: center
