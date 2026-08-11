@@ -25,7 +25,6 @@ $$
 
 - We can draw a **_transition diagram_** (the change in between one time step: $t_n$ and $t_{n+1}$) to help visualize the movement/change in our model:
 
-<div align="center">
 ```{mermaid}
 
 flowchart LR
@@ -33,7 +32,7 @@ flowchart LR
   B(($$L_t$$)) -->|0.39| C
   C(($$A_t$$)) -->|73| A
 ```
-</div>
+
 
 - Suppose that initially there are a 100 eggs, 10 larvae and 10 adults; use this find the number of individuals in each stage after one and two time-steps.:
 
@@ -192,7 +191,7 @@ A population consists of three age classes: children $(C)$, mature individuals $
 
 _Make sure you understand the arrows in the diagram in relation to the information given in the word problem above. Note that unlike the developmental stages where each stage converts into the next within a time-step, in the above problem, a percentage of each class population will continue to survive into the next time-step._
 
-<div align="center">
+
 ```{mermaid}
 
 flowchart LR
@@ -200,7 +199,7 @@ flowchart LR
   B(($$L_t$$)) -->|0.39| C
   C(($$A_t$$)) -->|73| A
 ```
-</div>
+
 
 - Write the equations that model this population:
 
