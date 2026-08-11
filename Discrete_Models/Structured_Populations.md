@@ -25,17 +25,17 @@ $$
 
 - We can draw a **_transition diagram_** (the change in between one time step: $t_n$ and $t_{n+1}$) to help visualize the movement/change in our model:
 
-```{mermaid}
-
-flowchart LR
-  A(($$E_t$$)) -->|0.04| B
-  B(($$L_t$$)) -->|0.39| C
-  C(($$A_t$$)) -->|73| A
-```
+%```{mermaid}
+%
+%flowchart LR
+%  A(($$E_t$$)) -->|0.04| B
+%  B(($$L_t$$)) -->|0.39| C
+%  C(($$A_t$$)) -->|73| A
+%```
 
 ```{image} ../images/structured_populations_fig1.png
 :alt: Insect_cycle.
-:width: 500px
+:width: 450px
 :align: center
 ```
 
@@ -198,20 +198,20 @@ A population consists of three age classes: children $(C)$, mature individuals $
 _Make sure you understand the arrows in the diagram in relation to the information given in the word problem above. Note that unlike the developmental stages where each stage converts into the next within a time-step, in the above problem, a percentage of each class population will continue to survive into the next time-step._
 
 
-```{mermaid}
-
-flowchart LR
-  A(($$C_t$$)) -->|0.5| B
-  B(($$M_t$$)) -->|0.3| C
-  B -->|1.5| A
-  C(($$E_t$$)) -->|0.6| C
-  B -->|0.65| B
-  A -->|0.48| A
-```
+%```{mermaid}
+%
+%flowchart LR
+%  A(($$C_t$$)) -->|0.5| B
+%  B(($$M_t$$)) -->|0.3| C
+%  B -->|1.5| A
+%  C(($$E_t$$)) -->|0.6| C
+%  B -->|0.65| B
+%  A -->|0.48| A
+%```
 
 ```{image} ../images/structured_populations_fig2.png
 :alt: Population_cycle.
-:width: 500px
+:width: 550px
 :align: center
 ```
 
