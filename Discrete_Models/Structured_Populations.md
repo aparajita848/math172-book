@@ -209,7 +209,7 @@ flowchart LR
   A -->|0.48| A
 ```
 
-```{image} ../images/structured_populations_fig2.pdf
+```{image} ../images/structured_populations_fig2.png
 :alt: Population_cycle.
 :width: 500px
 :align: center
