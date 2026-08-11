@@ -195,9 +195,12 @@ _Make sure you understand the arrows in the diagram in relation to the informati
 ```{mermaid}
 
 flowchart LR
-  A(($$E_t$$)) -->|0.04| B
-  B(($$L_t$$)) -->|0.39| C
-  C(($$A_t$$)) -->|73| A
+  A(($$C_t$$)) -->|0.5| B
+  B(($$M_t$$)) -->|0.3| C
+  B -->|1.5| A
+  C(($$E_t$$)) -->|0.6| C
+  B -->|0.65| B
+  A -->|0.48| A
 ```
 
 
