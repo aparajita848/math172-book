@@ -33,6 +33,12 @@ flowchart LR
   C(($$A_t$$)) -->|73| A
 ```
 
+```{image} ../images/structured_populations_fig1.pdf
+:alt: Insect_cycle.
+:width: 500px
+:align: center
+```
+
 
 - Suppose that initially there are a 100 eggs, 10 larvae and 10 adults; use this find the number of individuals in each stage after one and two time-steps.:
 
@@ -201,6 +207,12 @@ flowchart LR
   C(($$E_t$$)) -->|0.6| C
   B -->|0.65| B
   A -->|0.48| A
+```
+
+```{image} ../images/structured_populations_fig2.pdf
+:alt: Population_cycle.
+:width: 500px
+:align: center
 ```
 
 
