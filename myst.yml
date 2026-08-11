@@ -40,6 +40,9 @@ project:
         - file: Discrete_Models/Cobwebbing.md 
         - file: Discrete_Models/Matrices.md 
         - file: Discrete_Models/Structured_Populations.md
+        - title: Lab Exercises
+          children:
+            - file: Discrete_Models/Fibonacci_Rabbits.md
         - file: Discrete_Models/Eigenvectors_Eigenvalues.md
     - title: Multiple Species Continuous Models
       children:
