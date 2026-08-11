@@ -25,15 +25,15 @@ $$
 
 - We can draw a **_transition diagram_** (the change in between one time step: $t_n$ and $t_{n+1}$) to help visualize the movement/change in our model:
 
+<div align="center">
 ```{mermaid}
-:align: center
 
 flowchart LR
   A(($$E_t$$)) -->|0.04| B
   B(($$L_t$$)) -->|0.39| C
   C(($$A_t$$)) -->|73| A
 ```
-
+</div>
 
 - Suppose that initially there are a 100 eggs, 10 larvae and 10 adults; use this find the number of individuals in each stage after one and two time-steps.:
 
@@ -125,6 +125,158 @@ A_t
 L_0	\\
 A_0   
 \end{bmatrix}$.
+
+---
+
+**Structured population models** divide the population by groups (like the previous example) or developmental stages. For example
+
+$$
+\begin{equation*}
+\begin{aligned}
+x^1_t\hspace*{10pt}&=\hspace*{10pt}\text{ number of individuals age }0\text{ through }15\text{ at time }t \\
+x^2_t\hspace*{10pt}&=\hspace*{10pt}\text{ number of individuals age }16\text{ through }35\text{ at time }t \\
+x^3_t\hspace*{10pt}&=\hspace*{10pt}\text{ number of individuals age }36\text{ through }65\text{ at time }t \\
+x^4_t\hspace*{10pt}&=\hspace*{10pt}\text{ number of individuals age }66\text{ through }80\text{ at time }t \\
+x^5_t\hspace*{10pt}&=\hspace*{10pt}\text{ number of individuals age }81\text{ or older at time }t 
+\end{aligned}
+\end{equation*}
+$$
+
+ In general we can represent these models in a simple matrix equation
+
+$$
+\begin{equation*}
+\begin{aligned}
+\mathbf{x}_{t+1}=P\mathbf{x}_t
+\end{aligned}
+\end{equation*}
+$$
+
+where 
+
+$$
+\begin{equation*}
+\begin{aligned}
+\mathbf{x}_t=\begin{bmatrix}
+x_t^1 \\
+x_t^2 \\
+x_t^3 \\
+\vdots \\
+x_t^n
+\end{bmatrix},\hspace*{2cm}P=\begin{bmatrix}
+p_{11}	&	p_{12}	&	p_{13}	&	\cdots	&	p_{1n}	\\
+p_{21}	&	p_{22}	&	p_{23}	&	\cdots	&	p_{2n}	\\
+p_{31}	&	p_{32}	&	p_{33}	&	\cdots	&	p_{3n}	\\
+\vdots	&	\vdots	&	\vdots	&	\ddots	&	\vdots	\\
+p_{n1}	&	p_{n2}	&	p_{n3}	&	\cdots	&	p_{nn}	\\
+\end{bmatrix}
+\end{aligned}
+\end{equation*}
+$$
+
+where $n$ is the number of groups and $P$ is called the \textbf{transition matrix} because it captures the transition between time $t$ and $t+1$. The size of $P$ is $n\times n$ because $n$ is the total number of groups in the population. To construct $P$ we need to determine which groups transfer individuals from one to the other.
+
+
+|   |$x^1_t$ | $x^2_t$ | $x^3_t$ |
+|---|---|---|---| 
+|$x^1_{t+1}$ | $p_{11}$ | $p_{12}$ | $p_{13}$ |
+|$x^2_{t+1}$ | $p_{21}$ | $p_{22}$ | $p_{23}$ |
+|$x^3_{t+1}$ | $p_{31}$	| $p_{32}$ | $p_{33}$ |
+
+---
+## Example
+
+A population consists of three age classes: children $(C)$, mature individuals $(M)$ and elderly individuals $(E)$. After each time step, $50\%$ of children become mature individuals and $2\%$ die; $30\%$ of mature individuals become old and $5\%$ die; finally $40\%$ of old individuals die. Moreover, at each time step, each pair of mature individuals produce $3$ children.
+
+- Given is the transition diagram modelling this situation.
+
+_Make sure you understand the arrows in the diagram in relation to the information given in the word problem above. Note that unlike the developmental stages where each stage converts into the next within a time-step, in the above problem, a percentage of each class population will continue to survive into the next time-step._
+
+<div align="center">
+```{mermaid}
+
+flowchart LR
+  A(($$E_t$$)) -->|0.04| B
+  B(($$L_t$$)) -->|0.39| C
+  C(($$A_t$$)) -->|73| A
+```
+</div>
+
+- Write the equations that model this population:
+
+$$
+\begin{equation*}
+\begin{aligned}
+C_{t+1}	&	=	0.48C_t+1.5M_t	\\
+M_{t+1}	&	=	0.5C_t+0.65M_t	\\
+E_{t+1}	&	=	0.3M_t+0.6E_t
+\end{aligned}
+\end{equation*}
+$$
+
+- Write the transition matrix for this model.
+
+$$
+\begin{equation*}
+\begin{aligned}
+P=\begin{bmatrix}
+0.48	&	1.5	&	0	\\
+0.5	&	0.65	&	0	\\
+0	&	0.3	&	0.6
+\end{bmatrix}
+\end{aligned}
+\end{equation*}
+$$
+
+- Write a matrix equation modelling this situation as well as an explicit solution. Let $C_0$, $M_0$ and $E_0$ denote the initial populations of each group.
+
+$$
+\begin{equation*}
+\begin{aligned}
+\begin{bmatrix}
+C_t	\\
+M_t	\\
+E_t
+\end{bmatrix}=\begin{bmatrix}
+0.48	&	1.5	&	0	\\
+0.5	&	0.65	&	0	\\
+0	&	0.3	&	0.6
+\end{bmatrix}^t\begin{bmatrix}
+C_0	\\
+M_0	\\
+E_0
+\end{bmatrix}
+\end{aligned}
+\end{equation*}
+$$
+
+- Suppose that $M_0=200$ and $C_0=E_0=0$. What is the total population after $4$ time steps have passed?
+
+We plug-in $t=4$:
+
+$$
+\begin{equation*}
+\begin{aligned}
+\begin{bmatrix}
+C_4	\\
+M_4	\\
+E_4
+\end{bmatrix}=\begin{bmatrix}
+0.48	&	1.5	&	0	\\
+0.5	&	0.65	&	0	\\
+0	&	0.3	&	0.6
+\end{bmatrix}^4\begin{bmatrix}
+0	\\
+200	\\
+0
+\end{bmatrix}=\begin{bmatrix}
+730	\\
+466	\\
+166
+\end{bmatrix}\Longrightarrow 730+466+166=\boxed{1366}
+\end{aligned}
+\end{equation*}
+$$
 
 
 ---
