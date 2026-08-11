@@ -26,10 +26,12 @@ $$
 - We can draw a **_transition diagram_** (the change in between one time step: $t_n$ and $t_{n+1}$) to help visualize the movement/change in our model:
 
 ```{mermaid}
+:align: center
+
 flowchart LR
-  A($E_t$) --> B
-  B($L_t$) --> C
-  C($A_t$) --> A
+  A(($$E_t$$)) --> B
+  B(($$L_t$$)) --> C
+  C(($$A_t$$)) --> A
 ```
 
 
