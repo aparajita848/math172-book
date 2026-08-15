@@ -37,7 +37,7 @@ Using the following _**assumptions**_, visualize the structured population using
 
 | Time (months) | Total couples | Baby couples | Juvenile couples | Adult couples |
 | :--- | :--- | :--- | :--- | :--- |
-| 0 | <input type="number"> | <input type="number"> | <input type="number"> | <input type="number"> |
+| 0 | <input type="number"> | <input type="number" size="5"> | <input type="number" > | <input type="number"> |
 | 1 | <input type="number"> | <input type="number"> | <input type="number"> | <input type="number"> |
 | 2 | <input type="number"> | <input type="number"> | <input type="number"> | <input type="number"> |
 | 3 | <input type="number"> | <input type="number"> | <input type="number"> | <input type="number"> |
