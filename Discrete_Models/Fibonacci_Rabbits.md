@@ -47,6 +47,41 @@ Using the following _**assumptions**_, visualize the structured population using
 | 7 | <input type="number"> | <input type="number"> | <input type="number"> | <input type="number"> |
 | 8 | <input type="number"> | <input type="number"> | <input type="number"> | <input type="number"> |
 
+```{raw} html
+<table style="border-collapse:collapse; width:100%;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #333; padding:8px; text-align:left;">Month (n)</th>
+      <th style="border:1px solid #333; padding:8px; text-align:left;">Newborn (N)</th>
+      <th style="border:1px solid #333; padding:8px; text-align:left;">Juvenile (J)</th>
+      <th style="border:1px solid #333; padding:8px; text-align:left;">Adult (A)</th>
+      <th style="border:1px solid #333; padding:8px; text-align:left;">Total (T)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #333; padding:4px;">0</td>
+      <td style="border:1px solid #333; padding:4px;"><input type="text" style="width:90%; border:none;" /></td>
+      <td style="border:1px solid #333; padding:4px;"><input type="text" style="width:90%; border:none;" /></td>
+      <td style="border:1px solid #333; padding:4px;"><input type="text" style="width:90%; border:none;" /></td>
+      <td style="border:1px solid #333; padding:4px;"><input type="text" style="width:90%; border:none;" /></td>
+    </tr>
+    <!-- repeat this <tr> block for each row (month 1, 2, 3, ...) -->
+  </tbody>
+</table>
+```
+
+
+:::{list-table} Population table 1.
+:header-rows: 1
+
+* - Time (months) 
+  - Total couples 
+  - Baby couples 
+  - Juvenile couples
+  - Adult couples
+* - 
+
  (a) 
 
 
